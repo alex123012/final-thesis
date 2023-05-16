@@ -46,20 +46,6 @@ var (
 	genomeAnnotationBedFile string
 )
 
-type arrayFlags []string
-
-func (i *arrayFlags) String() string {
-	if i == nil || len(*i) < 1 {
-		return "[]"
-	}
-	return "[" + strings.Join(*i, ", ") + "]"
-}
-
-func (i *arrayFlags) Set(value string) error {
-	*i = append(*i, strings.Split(value, ",")...)
-	return nil
-}
-
 func parseArgs() error {
 
 	flag.StringVar(&GenomeVersion, "genome-version", GenomeVersion, "genome version to download/extract files from.\nWon't be used if --genome-file exists.\noptional")
