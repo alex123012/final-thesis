@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/alex123012/mirna-add-replace/pkg/shell"
+	"github.com/alex123012/final-thesis/pkg/shell"
 	"github.com/biogo/biogo/seq/linear"
 )
 
@@ -141,6 +141,7 @@ func main() {
 
 	runConfigs := []struct {
 		resultFile string
+		condition  func() bool
 		f          func() error
 		logMessage string
 	}{
@@ -184,6 +185,7 @@ func main() {
 		},
 		{
 			resultFile: bowtieResultFile,
+			condition:  func() bool { return fileExists(bowtieResultFile + ".gz") },
 			f:          runBowtie(BowtieIndexPrefix, bowtieResultFile, fastqFile),
 			logMessage: "Running bowtie",
 		},
@@ -191,6 +193,11 @@ func main() {
 			resultFile: bamResultFile,
 			f:          runSamtoolsViewBam(bowtieResultFile, bamResultFile),
 			logMessage: "Running samtools view -b",
+		},
+		{
+			resultFile: bowtieResultFile + ".gz",
+			f:          gzipFile(bowtieResultFile),
+			logMessage: "Saving bowtie result (SAM) file to gzip archive",
 		},
 		{
 			resultFile: bamSortedResultFile,
@@ -225,7 +232,7 @@ func main() {
 	}
 
 	for _, cfg := range runConfigs {
-		if fileExists(cfg.resultFile) {
+		if fileExists(cfg.resultFile) || (cfg.condition != nil && cfg.condition()) {
 			continue
 		}
 
@@ -253,7 +260,7 @@ func runFasterqDump(accession, resultFile string) error {
 		return err
 	}
 
-	return sr.RunShell("gzip", fastqFileUngzipped)
+	return gzipFile(fastqFileUngzipped)()
 }
 
 func runCutadapt(adapterSeq, resultPrefix, resultsFolder string, fastqFiles ...string) ([]string, error) {
@@ -403,6 +410,12 @@ func runSamtoolsViewBam(samFile, resultBamFile string) func() error {
 	return func() error {
 		if err := pathForFile(resultBamFile); err != nil {
 			return err
+		}
+		if !fileExists(samFile) {
+			sr := shell.NewShellRunner(nil, nil, nil)
+			if err := sr.RunShell("gunzip", samFile+".gz"); err != nil {
+				return err
+			}
 		}
 		return runSamtools("view", "-bo", resultBamFile, samFile)
 	}

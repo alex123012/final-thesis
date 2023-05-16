@@ -6,7 +6,8 @@ brew install samtools bcftools bedtools bedops sratoolkit
 # Preparation step
 * Download sequences
 ```bash
-# golang implementation
+fasterq-dump --outfile input/<Accession>.fastq --mem 1GB -x <Accession>
+gzip input/<Accession>.fastq
 ```
 
 * Run adapter trimming
@@ -19,22 +20,22 @@ cutadapt -q 15 -e 0.12 -a TGGAATTCTCGGGTGCCAAGG -m 16 --discard-untrimmed <Acces
 # golang implementation
 ```
 
-* download mirna annotations for genome
+* Download mirna annotations for genome
 ```bash
 # golang implementation
 ```
 
-* download mirna mature seqs
+* Download mirna mature seqs
 ```bash
 # golang implementation
 ```
 
-* download mirna hairpins seqs
+* Download mirna hairpins seqs
 ```bash
 # golang implementation
 ```
 
-* reheader genome file by https://genome.ucsc.edu/cgi-bin/hgTracks?chromInfoPage=
+* Reheader genome file by https://genome.ucsc.edu/cgi-bin/hgTracks?chromInfoPage=
 ```bash
 # golang implementation
 ```
@@ -58,6 +59,11 @@ bowtie -S -v 1 -a --best --strata -x bowtie_indexes/<Genome version> results/<Ac
 * Convert SAM bowtie output to BAM
 ```bash
 samtools view -bo results/<Accession>/result.bam results/<Accession>/result.sam
+```
+
+* Gzip bowtie result (SAM) file
+```bash
+gzip results/<Accession>/result.sam
 ```
 
 * Sort Bam file

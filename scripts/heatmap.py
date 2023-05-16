@@ -14,7 +14,8 @@ def plot_ref_alt_heatmap(file_name: str, result_heatmap: str):
     name = retrieve_name_from_filename(file_name)
     df = read_csv(file_name)
     data = pd.crosstab(df.REF, df.ALT)
-
+    if data.shape == (0, 0):
+        return
     fig, ax = plt.subplots()
     fig.suptitle(f"Editing events count in {name}")
     sns.heatmap(data=data, cmap="Blues", ax=ax, annot=True)

@@ -15,6 +15,7 @@ import (
 
 	"compress/gzip"
 
+	"github.com/alex123012/final-thesis/pkg/shell"
 	"github.com/biogo/biogo/alphabet"
 	"github.com/biogo/biogo/io/seqio"
 	"github.com/biogo/biogo/io/seqio/fasta"
@@ -40,9 +41,11 @@ func mkdir(dir string) error {
 	return nil
 }
 
-func fileExists(fileName string) bool {
-	if _, err := os.Stat(fileName); errors.Is(err, os.ErrNotExist) {
-		return false
+func fileExists(fileNames ...string) bool {
+	for _, fileName := range fileNames {
+		if _, err := os.Stat(fileName); errors.Is(err, os.ErrNotExist) {
+			return false
+		}
 	}
 	return true
 }
@@ -232,4 +235,11 @@ func seqToBytes(s *linear.Seq) []byte {
 	b.Write(alphabet.LettersToBytes(s.Seq))
 	b.WriteByte('\n')
 	return b.Bytes()
+}
+
+func gzipFile(fileName string) func() error {
+	return func() error {
+		sr := shell.NewShellRunner(nil, nil, nil)
+		return sr.RunShell("gzip", fileName)
+	}
 }

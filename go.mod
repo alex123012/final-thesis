@@ -1,4 +1,4 @@
-module github.com/alex123012/mirna-add-replace
+module github.com/alex123012/final-thesis
 
 go 1.20
 
