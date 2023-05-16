@@ -1,0 +1,937 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##bcftoolsVersion=1.17+htslib-1.17
+##bcftoolsCommand=mpileup --seed 42 -Ou --max-depth 100000 -f genomes/GCF_000001405.40.reheadered.fasta -R mirna/hsa.bed results/SRR18488115/result.sorted.bam
+##reference=file://genomes/GCF_000001405.40.reheadered.fasta
+##contig=<ID=chr1,length=248956422>
+##contig=<ID=chr1_KI270706v1_random,length=175055>
+##contig=<ID=chr1_KI270707v1_random,length=32032>
+##contig=<ID=chr1_KI270708v1_random,length=127682>
+##contig=<ID=chr1_KI270709v1_random,length=66860>
+##contig=<ID=chr1_KI270710v1_random,length=40176>
+##contig=<ID=chr1_KI270711v1_random,length=42210>
+##contig=<ID=chr1_KI270712v1_random,length=176043>
+##contig=<ID=chr1_KI270713v1_random,length=40745>
+##contig=<ID=chr1_KI270714v1_random,length=41717>
+##contig=<ID=chr2,length=242193529>
+##contig=<ID=chr2_KI270715v1_random,length=161471>
+##contig=<ID=chr2_KI270716v1_random,length=153799>
+##contig=<ID=chr3,length=198295559>
+##contig=<ID=chr3_GL000221v1_random,length=155397>
+##contig=<ID=chr4,length=190214555>
+##contig=<ID=chr4_GL000008v2_random,length=209709>
+##contig=<ID=chr5,length=181538259>
+##contig=<ID=chr5_GL000208v1_random,length=92689>
+##contig=<ID=chr6,length=170805979>
+##contig=<ID=chr7,length=159345973>
+##contig=<ID=chr8,length=145138636>
+##contig=<ID=chr9,length=138394717>
+##contig=<ID=chr9_KI270717v1_random,length=40062>
+##contig=<ID=chr9_KI270718v1_random,length=38054>
+##contig=<ID=chr9_KI270719v1_random,length=176845>
+##contig=<ID=chr9_KI270720v1_random,length=39050>
+##contig=<ID=chr10,length=133797422>
+##contig=<ID=chr11,length=135086622>
+##contig=<ID=chr12,length=133275309>
+##contig=<ID=chr13,length=114364328>
+##contig=<ID=chr14,length=107043718>
+##contig=<ID=chr14_GL000009v2_random,length=201709>
+##contig=<ID=chr14_GL000225v1_random,length=211173>
+##contig=<ID=chr14_KI270722v1_random,length=194050>
+##contig=<ID=chr14_GL000194v1_random,length=191469>
+##contig=<ID=chr14_KI270723v1_random,length=38115>
+##contig=<ID=chr14_KI270724v1_random,length=39555>
+##contig=<ID=chr14_KI270725v1_random,length=172810>
+##contig=<ID=chr14_KI270726v1_random,length=43739>
+##contig=<ID=chr15,length=101991189>
+##contig=<ID=chr15_KI270727v1_random,length=448248>
+##contig=<ID=chr16,length=90338345>
+##contig=<ID=chr16_KI270728v1_random,length=1872759>
+##contig=<ID=chr17,length=83257441>
+##contig=<ID=chr17_GL000205v2_random,length=185591>
+##contig=<ID=chr17_KI270729v1_random,length=280839>
+##contig=<ID=chr17_KI270730v1_random,length=112551>
+##contig=<ID=chr18,length=80373285>
+##contig=<ID=chr19,length=58617616>
+##contig=<ID=chr20,length=64444167>
+##contig=<ID=chr21,length=46709983>
+##contig=<ID=chr22,length=50818468>
+##contig=<ID=chr22_KI270731v1_random,length=150754>
+##contig=<ID=chr22_KI270732v1_random,length=41543>
+##contig=<ID=chr22_KI270733v1_random,length=179772>
+##contig=<ID=chr22_KI270735v1_random,length=42811>
+##contig=<ID=chr22_KI270736v1_random,length=181920>
+##contig=<ID=chr22_KI270737v1_random,length=103838>
+##contig=<ID=chr22_KI270738v1_random,length=99375>
+##contig=<ID=chr22_KI270739v1_random,length=73985>
+##contig=<ID=chrX,length=156040895>
+##contig=<ID=chrY,length=57227415>
+##contig=<ID=chrY_KI270740v1_random,length=37240>
+##contig=<ID=chrUn_KI270302v1,length=2274>
+##contig=<ID=chrUn_KI270304v1,length=2165>
+##contig=<ID=chrUn_KI270303v1,length=1942>
+##contig=<ID=chrUn_KI270305v1,length=1472>
+##contig=<ID=chrUn_KI270322v1,length=21476>
+##contig=<ID=chrUn_KI270320v1,length=4416>
+##contig=<ID=chrUn_KI270310v1,length=1201>
+##contig=<ID=chrUn_KI270316v1,length=1444>
+##contig=<ID=chrUn_KI270315v1,length=2276>
+##contig=<ID=chrUn_KI270312v1,length=998>
+##contig=<ID=chrUn_KI270311v1,length=12399>
+##contig=<ID=chrUn_KI270317v1,length=37690>
+##contig=<ID=chrUn_KI270412v1,length=1179>
+##contig=<ID=chrUn_KI270411v1,length=2646>
+##contig=<ID=chrUn_KI270414v1,length=2489>
+##contig=<ID=chrUn_KI270419v1,length=1029>
+##contig=<ID=chrUn_KI270418v1,length=2145>
+##contig=<ID=chrUn_KI270420v1,length=2321>
+##contig=<ID=chrUn_KI270424v1,length=2140>
+##contig=<ID=chrUn_KI270417v1,length=2043>
+##contig=<ID=chrUn_KI270422v1,length=1445>
+##contig=<ID=chrUn_KI270423v1,length=981>
+##contig=<ID=chrUn_KI270425v1,length=1884>
+##contig=<ID=chrUn_KI270429v1,length=1361>
+##contig=<ID=chrUn_KI270442v1,length=392061>
+##contig=<ID=chrUn_KI270466v1,length=1233>
+##contig=<ID=chrUn_KI270465v1,length=1774>
+##contig=<ID=chrUn_KI270467v1,length=3920>
+##contig=<ID=chrUn_KI270435v1,length=92983>
+##contig=<ID=chrUn_KI270438v1,length=112505>
+##contig=<ID=chrUn_KI270468v1,length=4055>
+##contig=<ID=chrUn_KI270510v1,length=2415>
+##contig=<ID=chrUn_KI270509v1,length=2318>
+##contig=<ID=chrUn_KI270518v1,length=2186>
+##contig=<ID=chrUn_KI270508v1,length=1951>
+##contig=<ID=chrUn_KI270516v1,length=1300>
+##contig=<ID=chrUn_KI270512v1,length=22689>
+##contig=<ID=chrUn_KI270519v1,length=138126>
+##contig=<ID=chrUn_KI270522v1,length=5674>
+##contig=<ID=chrUn_KI270511v1,length=8127>
+##contig=<ID=chrUn_KI270515v1,length=6361>
+##contig=<ID=chrUn_KI270507v1,length=5353>
+##contig=<ID=chrUn_KI270517v1,length=3253>
+##contig=<ID=chrUn_KI270529v1,length=1899>
+##contig=<ID=chrUn_KI270528v1,length=2983>
+##contig=<ID=chrUn_KI270530v1,length=2168>
+##contig=<ID=chrUn_KI270539v1,length=993>
+##contig=<ID=chrUn_KI270538v1,length=91309>
+##contig=<ID=chrUn_KI270544v1,length=1202>
+##contig=<ID=chrUn_KI270548v1,length=1599>
+##contig=<ID=chrUn_KI270583v1,length=1400>
+##contig=<ID=chrUn_KI270587v1,length=2969>
+##contig=<ID=chrUn_KI270580v1,length=1553>
+##contig=<ID=chrUn_KI270581v1,length=7046>
+##contig=<ID=chrUn_KI270579v1,length=31033>
+##contig=<ID=chrUn_KI270589v1,length=44474>
+##contig=<ID=chrUn_KI270590v1,length=4685>
+##contig=<ID=chrUn_KI270584v1,length=4513>
+##contig=<ID=chrUn_KI270582v1,length=6504>
+##contig=<ID=chrUn_KI270588v1,length=6158>
+##contig=<ID=chrUn_KI270593v1,length=3041>
+##contig=<ID=chrUn_KI270591v1,length=5796>
+##contig=<ID=chrUn_KI270330v1,length=1652>
+##contig=<ID=chrUn_KI270329v1,length=1040>
+##contig=<ID=chrUn_KI270334v1,length=1368>
+##contig=<ID=chrUn_KI270333v1,length=2699>
+##contig=<ID=chrUn_KI270335v1,length=1048>
+##contig=<ID=chrUn_KI270338v1,length=1428>
+##contig=<ID=chrUn_KI270340v1,length=1428>
+##contig=<ID=chrUn_KI270336v1,length=1026>
+##contig=<ID=chrUn_KI270337v1,length=1121>
+##contig=<ID=chrUn_KI270363v1,length=1803>
+##contig=<ID=chrUn_KI270364v1,length=2855>
+##contig=<ID=chrUn_KI270362v1,length=3530>
+##contig=<ID=chrUn_KI270366v1,length=8320>
+##contig=<ID=chrUn_KI270378v1,length=1048>
+##contig=<ID=chrUn_KI270379v1,length=1045>
+##contig=<ID=chrUn_KI270389v1,length=1298>
+##contig=<ID=chrUn_KI270390v1,length=2387>
+##contig=<ID=chrUn_KI270387v1,length=1537>
+##contig=<ID=chrUn_KI270395v1,length=1143>
+##contig=<ID=chrUn_KI270396v1,length=1880>
+##contig=<ID=chrUn_KI270388v1,length=1216>
+##contig=<ID=chrUn_KI270394v1,length=970>
+##contig=<ID=chrUn_KI270386v1,length=1788>
+##contig=<ID=chrUn_KI270391v1,length=1484>
+##contig=<ID=chrUn_KI270383v1,length=1750>
+##contig=<ID=chrUn_KI270393v1,length=1308>
+##contig=<ID=chrUn_KI270384v1,length=1658>
+##contig=<ID=chrUn_KI270392v1,length=971>
+##contig=<ID=chrUn_KI270381v1,length=1930>
+##contig=<ID=chrUn_KI270385v1,length=990>
+##contig=<ID=chrUn_KI270382v1,length=4215>
+##contig=<ID=chrUn_KI270376v1,length=1136>
+##contig=<ID=chrUn_KI270374v1,length=2656>
+##contig=<ID=chrUn_KI270372v1,length=1650>
+##contig=<ID=chrUn_KI270373v1,length=1451>
+##contig=<ID=chrUn_KI270375v1,length=2378>
+##contig=<ID=chrUn_KI270371v1,length=2805>
+##contig=<ID=chrUn_KI270448v1,length=7992>
+##contig=<ID=chrUn_KI270521v1,length=7642>
+##contig=<ID=chrUn_GL000195v1,length=182896>
+##contig=<ID=chrUn_GL000219v1,length=179198>
+##contig=<ID=chrUn_GL000220v1,length=161802>
+##contig=<ID=chrUn_GL000224v1,length=179693>
+##contig=<ID=chrUn_KI270741v1,length=157432>
+##contig=<ID=chrUn_GL000226v1,length=15008>
+##contig=<ID=chrUn_GL000213v1,length=164239>
+##contig=<ID=chrUn_KI270743v1,length=210658>
+##contig=<ID=chrUn_KI270744v1,length=168472>
+##contig=<ID=chrUn_KI270745v1,length=41891>
+##contig=<ID=chrUn_KI270746v1,length=66486>
+##contig=<ID=chrUn_KI270747v1,length=198735>
+##contig=<ID=chrUn_KI270748v1,length=93321>
+##contig=<ID=chrUn_KI270749v1,length=158759>
+##contig=<ID=chrUn_KI270750v1,length=148850>
+##contig=<ID=chrUn_KI270751v1,length=150742>
+##contig=<ID=chrUn_KI270753v1,length=62944>
+##contig=<ID=chrUn_KI270754v1,length=40191>
+##contig=<ID=chrUn_KI270755v1,length=36723>
+##contig=<ID=chrUn_KI270756v1,length=79590>
+##contig=<ID=chrUn_KI270757v1,length=71251>
+##contig=<ID=chrUn_GL000214v1,length=137718>
+##contig=<ID=chrUn_KI270742v1,length=186739>
+##contig=<ID=chrUn_GL000216v2,length=176608>
+##contig=<ID=chrUn_GL000218v1,length=161147>
+##contig=<ID=chr1_KQ031383v1_fix,length=467143>
+##contig=<ID=chr1_KQ983255v1_alt,length=278659>
+##contig=<ID=chr1_MU273333v1_fix,length=1572686>
+##contig=<ID=chr1_KN538361v1_fix,length=305542>
+##contig=<ID=chr1_KQ458383v1_alt,length=349938>
+##contig=<ID=chr1_KN196473v1_fix,length=166200>
+##contig=<ID=chr1_KZ208904v1_alt,length=166136>
+##contig=<ID=chr1_KZ559100v1_fix,length=44955>
+##contig=<ID=chr1_KN196472v1_fix,length=186494>
+##contig=<ID=chr1_KZ208905v1_alt,length=140355>
+##contig=<ID=chr1_KQ458382v1_alt,length=141019>
+##contig=<ID=chr1_KV880763v1_alt,length=551020>
+##contig=<ID=chr1_KN196474v1_fix,length=122022>
+##contig=<ID=chr1_MU273330v1_alt,length=516764>
+##contig=<ID=chr1_MU273335v1_fix,length=211934>
+##contig=<ID=chr1_MU273336v1_fix,length=250447>
+##contig=<ID=chr1_MU273331v1_alt,length=847441>
+##contig=<ID=chr1_KN538360v1_fix,length=460100>
+##contig=<ID=chr1_KZ208906v1_fix,length=330031>
+##contig=<ID=chr1_KQ458384v1_alt,length=212205>
+##contig=<ID=chr1_MU273334v1_fix,length=210426>
+##contig=<ID=chr1_MU273332v1_alt,length=335159>
+##contig=<ID=chr2_ML143342v1_fix,length=84043>
+##contig=<ID=chr2_MU273344v1_fix,length=244725>
+##contig=<ID=chr2_MU273345v1_fix,length=174385>
+##contig=<ID=chr2_MU273343v1_fix,length=489404>
+##contig=<ID=chr2_MU273340v1_alt,length=284971>
+##contig=<ID=chr2_KQ031384v1_fix,length=481245>
+##contig=<ID=chr2_MU273337v1_alt,length=431782>
+##contig=<ID=chr2_MU273342v1_fix,length=955087>
+##contig=<ID=chr2_KZ208907v1_alt,length=181658>
+##contig=<ID=chr2_MU273339v1_alt,length=500581>
+##contig=<ID=chr2_MU273338v1_alt,length=535251>
+##contig=<ID=chr2_MU273341v1_fix,length=120381>
+##contig=<ID=chr2_KQ983256v1_alt,length=535088>
+##contig=<ID=chr2_KZ208908v1_alt,length=140361>
+##contig=<ID=chr2_KN538363v1_fix,length=365499>
+##contig=<ID=chr2_ML143341v1_fix,length=145975>
+##contig=<ID=chr2_KN538362v1_fix,length=208149>
+##contig=<ID=chr3_KV766192v1_fix,length=411654>
+##contig=<ID=chr3_MU273347v1_fix,length=301310>
+##contig=<ID=chr3_MU273348v1_fix,length=475876>
+##contig=<ID=chr3_KN196475v1_fix,length=451168>
+##contig=<ID=chr3_KQ031385v1_fix,length=373699>
+##contig=<ID=chr3_KN538364v1_fix,length=415308>
+##contig=<ID=chr3_ML143343v1_alt,length=215443>
+##contig=<ID=chr3_KZ208909v1_alt,length=175849>
+##contig=<ID=chr3_KQ031386v1_fix,length=165718>
+##contig=<ID=chr3_KN196476v1_fix,length=305979>
+##contig=<ID=chr3_KZ559104v1_fix,length=105527>
+##contig=<ID=chr3_KZ559105v1_alt,length=195063>
+##contig=<ID=chr3_KZ559103v1_alt,length=302885>
+##contig=<ID=chr3_KZ559102v1_alt,length=197752>
+##contig=<ID=chr3_KZ559101v1_alt,length=164041>
+##contig=<ID=chr3_MU273346v1_fix,length=469342>
+##contig=<ID=chr4_ML143344v1_fix,length=235734>
+##contig=<ID=chr4_ML143347v1_fix,length=176674>
+##contig=<ID=chr4_KQ090013v1_alt,length=90922>
+##contig=<ID=chr4_MU273351v1_fix,length=205691>
+##contig=<ID=chr4_ML143346v1_fix,length=53476>
+##contig=<ID=chr4_ML143348v1_fix,length=125549>
+##contig=<ID=chr4_ML143345v1_fix,length=341066>
+##contig=<ID=chr4_ML143349v1_fix,length=276109>
+##contig=<ID=chr4_KQ090014v1_alt,length=163749>
+##contig=<ID=chr4_KQ090015v1_alt,length=236512>
+##contig=<ID=chr4_MU273349v1_alt,length=308682>
+##contig=<ID=chr4_KV766193v1_alt,length=420675>
+##contig=<ID=chr4_MU273350v1_fix,length=113364>
+##contig=<ID=chr4_KQ983258v1_alt,length=205407>
+##contig=<ID=chr4_KQ983257v1_fix,length=230434>
+##contig=<ID=chr5_MU273354v1_fix,length=2101585>
+##contig=<ID=chr5_KZ208910v1_alt,length=135987>
+##contig=<ID=chr5_MU273353v1_fix,length=208405>
+##contig=<ID=chr5_KN196477v1_alt,length=139087>
+##contig=<ID=chr5_KV575243v1_alt,length=362221>
+##contig=<ID=chr5_MU273356v1_alt,length=302485>
+##contig=<ID=chr5_ML143350v1_fix,length=89956>
+##contig=<ID=chr5_MU273355v1_fix,length=508332>
+##contig=<ID=chr5_KV575244v1_fix,length=673059>
+##contig=<ID=chr5_MU273352v1_fix,length=34400>
+##contig=<ID=chr6_KZ208911v1_fix,length=242796>
+##contig=<ID=chr6_KQ090017v1_alt,length=82315>
+##contig=<ID=chr6_MU273357v1_alt,length=383128>
+##contig=<ID=chr6_KQ031387v1_fix,length=320750>
+##contig=<ID=chr6_KN196478v1_fix,length=268330>
+##contig=<ID=chr6_KQ090016v1_fix,length=245716>
+##contig=<ID=chr6_KV766194v1_fix,length=139427>
+##contig=<ID=chr6_ML143351v1_fix,length=73265>
+##contig=<ID=chr7_ML143352v1_fix,length=254759>
+##contig=<ID=chr7_KZ559106v1_alt,length=172555>
+##contig=<ID=chr7_MU273358v1_alt,length=464417>
+##contig=<ID=chr7_KV880764v1_fix,length=142129>
+##contig=<ID=chr7_KV880765v1_fix,length=468267>
+##contig=<ID=chr7_KZ208912v1_fix,length=589656>
+##contig=<ID=chr7_KZ208913v1_alt,length=680662>
+##contig=<ID=chr7_KQ031388v1_fix,length=179932>
+##contig=<ID=chr8_MU273362v1_fix,length=429744>
+##contig=<ID=chr8_KZ208915v1_fix,length=6367528>
+##contig=<ID=chr8_KV880767v1_fix,length=265876>
+##contig=<ID=chr8_MU273359v1_fix,length=150302>
+##contig=<ID=chr8_KV880766v1_fix,length=156998>
+##contig=<ID=chr8_MU273361v1_fix,length=106905>
+##contig=<ID=chr8_KZ559107v1_alt,length=103072>
+##contig=<ID=chr8_MU273363v1_fix,length=207371>
+##contig=<ID=chr8_KZ208914v1_fix,length=165120>
+##contig=<ID=chr8_MU273360v1_fix,length=39290>
+##contig=<ID=chr9_KQ090018v1_alt,length=163882>
+##contig=<ID=chr9_KQ090019v1_alt,length=134099>
+##contig=<ID=chr9_MU273366v1_fix,length=569668>
+##contig=<ID=chr9_MU273364v1_fix,length=340717>
+##contig=<ID=chr9_MU273365v1_fix,length=482250>
+##contig=<ID=chr9_KN196479v1_fix,length=330164>
+##contig=<ID=chr9_ML143353v1_fix,length=25408>
+##contig=<ID=chr10_ML143354v1_fix,length=454963>
+##contig=<ID=chr10_KN538367v1_fix,length=420164>
+##contig=<ID=chr10_ML143355v1_fix,length=292944>
+##contig=<ID=chr10_KQ090020v1_alt,length=185507>
+##contig=<ID=chr10_KN196480v1_fix,length=277797>
+##contig=<ID=chr10_KQ090021v1_fix,length=264545>
+##contig=<ID=chr10_MU273367v1_fix,length=196262>
+##contig=<ID=chr10_KN538366v1_fix,length=85284>
+##contig=<ID=chr10_KN538365v1_fix,length=14347>
+##contig=<ID=chr11_KQ759759v2_fix,length=204999>
+##contig=<ID=chr11_MU273369v1_fix,length=434831>
+##contig=<ID=chr11_ML143358v1_fix,length=270122>
+##contig=<ID=chr11_MU273371v1_fix,length=122722>
+##contig=<ID=chr11_KN538368v1_alt,length=203552>
+##contig=<ID=chr11_ML143360v1_fix,length=170928>
+##contig=<ID=chr11_KZ559109v1_fix,length=279644>
+##contig=<ID=chr11_KZ559108v1_fix,length=305244>
+##contig=<ID=chr11_KV766195v1_fix,length=140877>
+##contig=<ID=chr11_MU273370v1_fix,length=344606>
+##contig=<ID=chr11_KZ559111v1_alt,length=181167>
+##contig=<ID=chr11_ML143359v1_fix,length=217075>
+##contig=<ID=chr11_ML143357v1_fix,length=165419>
+##contig=<ID=chr11_KZ559110v1_alt,length=301637>
+##contig=<ID=chr11_KQ090022v1_fix,length=181958>
+##contig=<ID=chr11_ML143356v1_fix,length=45257>
+##contig=<ID=chr11_MU273368v1_alt,length=261194>
+##contig=<ID=chr11_KN196481v1_fix,length=108875>
+##contig=<ID=chr12_KQ090023v1_alt,length=109323>
+##contig=<ID=chr12_KZ208916v1_fix,length=1046838>
+##contig=<ID=chr12_ML143362v1_fix,length=192531>
+##contig=<ID=chr12_KN538369v1_fix,length=541038>
+##contig=<ID=chr12_KN196482v1_fix,length=211377>
+##contig=<ID=chr12_MU273372v1_fix,length=104537>
+##contig=<ID=chr12_KZ208918v1_alt,length=174808>
+##contig=<ID=chr12_KQ759760v1_fix,length=315610>
+##contig=<ID=chr12_KZ208917v1_fix,length=64689>
+##contig=<ID=chr12_KN538370v1_fix,length=86533>
+##contig=<ID=chr12_KZ559112v1_alt,length=154139>
+##contig=<ID=chr12_ML143361v1_fix,length=297568>
+##contig=<ID=chr13_ML143366v1_fix,length=409912>
+##contig=<ID=chr13_KN538372v1_fix,length=356766>
+##contig=<ID=chr13_KQ090024v1_alt,length=168146>
+##contig=<ID=chr13_ML143363v1_fix,length=7309>
+##contig=<ID=chr13_KN196483v1_fix,length=35455>
+##contig=<ID=chr13_KN538373v1_fix,length=148762>
+##contig=<ID=chr13_KQ090025v1_alt,length=123480>
+##contig=<ID=chr13_ML143364v1_fix,length=158944>
+##contig=<ID=chr13_ML143365v1_fix,length=65394>
+##contig=<ID=chr13_KN538371v1_fix,length=206320>
+##contig=<ID=chr14_ML143367v1_fix,length=399183>
+##contig=<ID=chr14_MU273373v1_fix,length=722645>
+##contig=<ID=chr14_KZ208920v1_fix,length=690932>
+##contig=<ID=chr14_ML143368v1_alt,length=264228>
+##contig=<ID=chr14_KZ208919v1_alt,length=171798>
+##contig=<ID=chr15_KN538374v1_fix,length=4998962>
+##contig=<ID=chr15_ML143372v1_fix,length=396515>
+##contig=<ID=chr15_ML143371v1_fix,length=5500449>
+##contig=<ID=chr15_KQ031389v1_alt,length=2365364>
+##contig=<ID=chr15_MU273375v1_alt,length=204007>
+##contig=<ID=chr15_ML143370v1_fix,length=369264>
+##contig=<ID=chr15_MU273374v1_fix,length=1154574>
+##contig=<ID=chr15_ML143369v1_fix,length=97763>
+##contig=<ID=chr16_MU273376v1_fix,length=87715>
+##contig=<ID=chr16_KQ090026v1_alt,length=59016>
+##contig=<ID=chr16_KZ559113v1_fix,length=480415>
+##contig=<ID=chr16_KV880768v1_fix,length=1927115>
+##contig=<ID=chr16_ML143373v1_fix,length=270967>
+##contig=<ID=chr16_KQ090027v1_alt,length=267463>
+##contig=<ID=chr16_KZ208921v1_alt,length=78609>
+##contig=<ID=chr16_KQ031390v1_alt,length=169136>
+##contig=<ID=chr16_MU273377v1_fix,length=334997>
+##contig=<ID=chr17_KV766196v1_fix,length=281919>
+##contig=<ID=chr17_ML143374v1_fix,length=137908>
+##contig=<ID=chr17_KV575245v1_fix,length=154723>
+##contig=<ID=chr17_KV766198v1_alt,length=276292>
+##contig=<ID=chr17_MU273380v1_fix,length=538541>
+##contig=<ID=chr17_MU273378v1_alt,length=372839>
+##contig=<ID=chr17_KV766197v1_alt,length=246895>
+##contig=<ID=chr17_KZ559114v1_alt,length=116753>
+##contig=<ID=chr17_MU273383v1_fix,length=172609>
+##contig=<ID=chr17_MU273379v1_fix,length=234878>
+##contig=<ID=chr17_MU273382v1_fix,length=187626>
+##contig=<ID=chr17_ML143375v1_fix,length=56695>
+##contig=<ID=chr17_MU273381v1_fix,length=144689>
+##contig=<ID=chr18_KZ559116v1_alt,length=163186>
+##contig=<ID=chr18_KQ458385v1_alt,length=205101>
+##contig=<ID=chr18_KZ559115v1_fix,length=230843>
+##contig=<ID=chr18_KQ090028v1_fix,length=407387>
+##contig=<ID=chr18_KZ208922v1_fix,length=93070>
+##contig=<ID=chr19_MU273386v1_fix,length=226166>
+##contig=<ID=chr19_MU273387v1_alt,length=89211>
+##contig=<ID=chr19_MU273384v1_fix,length=333754>
+##contig=<ID=chr19_ML143376v1_fix,length=493165>
+##contig=<ID=chr19_KQ458386v1_fix,length=405389>
+##contig=<ID=chr19_MU273385v1_fix,length=137818>
+##contig=<ID=chr19_KN196484v1_fix,length=370917>
+##contig=<ID=chr19_KV575246v1_alt,length=163926>
+##contig=<ID=chr19_KV575247v1_alt,length=170206>
+##contig=<ID=chr19_KV575248v1_alt,length=168131>
+##contig=<ID=chr19_KV575249v1_alt,length=293522>
+##contig=<ID=chr19_KV575250v1_alt,length=241058>
+##contig=<ID=chr19_KV575251v1_alt,length=159285>
+##contig=<ID=chr19_KV575252v1_alt,length=178197>
+##contig=<ID=chr19_KV575253v1_alt,length=166713>
+##contig=<ID=chr19_KV575254v1_alt,length=99845>
+##contig=<ID=chr19_KV575255v1_alt,length=161095>
+##contig=<ID=chr19_KV575256v1_alt,length=223118>
+##contig=<ID=chr19_KV575257v1_alt,length=100553>
+##contig=<ID=chr19_KV575259v1_alt,length=171263>
+##contig=<ID=chr19_KV575260v1_alt,length=145691>
+##contig=<ID=chr19_KV575258v1_alt,length=156965>
+##contig=<ID=chr20_MU273388v1_fix,length=273725>
+##contig=<ID=chr20_MU273389v1_fix,length=355731>
+##contig=<ID=chr21_ML143377v1_fix,length=519485>
+##contig=<ID=chr21_MU273390v1_fix,length=336752>
+##contig=<ID=chr21_MU273391v1_fix,length=1020778>
+##contig=<ID=chr21_MU273392v1_fix,length=189707>
+##contig=<ID=chr22_ML143380v1_fix,length=412368>
+##contig=<ID=chr22_ML143378v1_fix,length=461303>
+##contig=<ID=chr22_KN196485v1_alt,length=156562>
+##contig=<ID=chr22_KQ458387v1_alt,length=155930>
+##contig=<ID=chr22_KQ458388v1_alt,length=174749>
+##contig=<ID=chr22_KN196486v1_alt,length=153027>
+##contig=<ID=chr22_KQ759761v1_alt,length=145162>
+##contig=<ID=chr22_ML143379v1_fix,length=12295>
+##contig=<ID=chr22_KQ759762v2_fix,length=101040>
+##contig=<ID=chrX_KV766199v1_alt,length=188004>
+##contig=<ID=chrX_ML143385v1_fix,length=17435>
+##contig=<ID=chrX_MU273397v1_alt,length=330493>
+##contig=<ID=chrX_ML143382v1_fix,length=28824>
+##contig=<ID=chrX_MU273393v1_fix,length=68810>
+##contig=<ID=chrX_ML143383v1_fix,length=68192>
+##contig=<ID=chrX_MU273394v1_fix,length=140567>
+##contig=<ID=chrX_ML143381v1_fix,length=403128>
+##contig=<ID=chrX_MU273396v1_alt,length=294119>
+##contig=<ID=chrX_ML143384v1_fix,length=14678>
+##contig=<ID=chrX_MU273395v1_alt,length=619716>
+##contig=<ID=chrY_KZ208923v1_fix,length=48370>
+##contig=<ID=chrY_MU273398v1_fix,length=865743>
+##contig=<ID=chrY_KZ208924v1_fix,length=209722>
+##contig=<ID=chrY_KN196487v1_fix,length=101150>
+##contig=<ID=chr1_KI270762v1_alt,length=354444>
+##contig=<ID=chr1_KI270766v1_alt,length=256271>
+##contig=<ID=chr1_KI270760v1_alt,length=109528>
+##contig=<ID=chr1_KI270765v1_alt,length=185285>
+##contig=<ID=chr1_GL383518v1_alt,length=182439>
+##contig=<ID=chr1_GL383519v1_alt,length=110268>
+##contig=<ID=chr1_GL383520v2_alt,length=366580>
+##contig=<ID=chr1_KI270764v1_alt,length=50258>
+##contig=<ID=chr1_KI270763v1_alt,length=911658>
+##contig=<ID=chr1_KI270759v1_alt,length=425601>
+##contig=<ID=chr1_KI270761v1_alt,length=165834>
+##contig=<ID=chr2_KI270770v1_alt,length=136240>
+##contig=<ID=chr2_KI270773v1_alt,length=70887>
+##contig=<ID=chr2_KI270774v1_alt,length=223625>
+##contig=<ID=chr2_KI270769v1_alt,length=120616>
+##contig=<ID=chr2_GL383521v1_alt,length=143390>
+##contig=<ID=chr2_KI270772v1_alt,length=133041>
+##contig=<ID=chr2_KI270775v1_alt,length=138019>
+##contig=<ID=chr2_KI270771v1_alt,length=110395>
+##contig=<ID=chr2_KI270768v1_alt,length=110099>
+##contig=<ID=chr2_GL582966v2_alt,length=96131>
+##contig=<ID=chr2_GL383522v1_alt,length=123821>
+##contig=<ID=chr2_KI270776v1_alt,length=174166>
+##contig=<ID=chr2_KI270767v1_alt,length=161578>
+##contig=<ID=chr3_JH636055v2_alt,length=173151>
+##contig=<ID=chr3_KI270783v1_alt,length=109187>
+##contig=<ID=chr3_KI270780v1_alt,length=224108>
+##contig=<ID=chr3_GL383526v1_alt,length=180671>
+##contig=<ID=chr3_KI270777v1_alt,length=173649>
+##contig=<ID=chr3_KI270778v1_alt,length=248252>
+##contig=<ID=chr3_KI270781v1_alt,length=113034>
+##contig=<ID=chr3_KI270779v1_alt,length=205312>
+##contig=<ID=chr3_KI270782v1_alt,length=162429>
+##contig=<ID=chr3_KI270784v1_alt,length=184404>
+##contig=<ID=chr4_KI270790v1_alt,length=220246>
+##contig=<ID=chr4_GL383528v1_alt,length=376187>
+##contig=<ID=chr4_KI270787v1_alt,length=111943>
+##contig=<ID=chr4_GL000257v2_alt,length=586476>
+##contig=<ID=chr4_KI270788v1_alt,length=158965>
+##contig=<ID=chr4_GL383527v1_alt,length=164536>
+##contig=<ID=chr4_KI270785v1_alt,length=119912>
+##contig=<ID=chr4_KI270789v1_alt,length=205944>
+##contig=<ID=chr4_KI270786v1_alt,length=244096>
+##contig=<ID=chr5_KI270793v1_alt,length=126136>
+##contig=<ID=chr5_KI270792v1_alt,length=179043>
+##contig=<ID=chr5_KI270791v1_alt,length=195710>
+##contig=<ID=chr5_GL383532v1_alt,length=82728>
+##contig=<ID=chr5_GL949742v1_alt,length=226852>
+##contig=<ID=chr5_KI270794v1_alt,length=164558>
+##contig=<ID=chr5_GL339449v2_alt,length=1612928>
+##contig=<ID=chr5_GL383530v1_alt,length=101241>
+##contig=<ID=chr5_KI270796v1_alt,length=172708>
+##contig=<ID=chr5_GL383531v1_alt,length=173459>
+##contig=<ID=chr5_KI270795v1_alt,length=131892>
+##contig=<ID=chr6_GL000250v2_alt,length=4672374>
+##contig=<ID=chr6_KI270800v1_alt,length=175808>
+##contig=<ID=chr6_KI270799v1_alt,length=152148>
+##contig=<ID=chr6_GL383533v1_alt,length=124736>
+##contig=<ID=chr6_KI270801v1_alt,length=870480>
+##contig=<ID=chr6_KI270802v1_alt,length=75005>
+##contig=<ID=chr6_KB021644v2_alt,length=185823>
+##contig=<ID=chr6_KI270797v1_alt,length=197536>
+##contig=<ID=chr6_KI270798v1_alt,length=271782>
+##contig=<ID=chr7_KI270804v1_alt,length=157952>
+##contig=<ID=chr7_KI270809v1_alt,length=209586>
+##contig=<ID=chr7_KI270806v1_alt,length=158166>
+##contig=<ID=chr7_GL383534v2_alt,length=119183>
+##contig=<ID=chr7_KI270803v1_alt,length=1111570>
+##contig=<ID=chr7_KI270808v1_alt,length=271455>
+##contig=<ID=chr7_KI270807v1_alt,length=126434>
+##contig=<ID=chr7_KI270805v1_alt,length=209988>
+##contig=<ID=chr8_KI270818v1_alt,length=145606>
+##contig=<ID=chr8_KI270812v1_alt,length=282736>
+##contig=<ID=chr8_KI270811v1_alt,length=292436>
+##contig=<ID=chr8_KI270821v1_alt,length=985506>
+##contig=<ID=chr8_KI270813v1_alt,length=300230>
+##contig=<ID=chr8_KI270822v1_alt,length=624492>
+##contig=<ID=chr8_KI270814v1_alt,length=141812>
+##contig=<ID=chr8_KI270810v1_alt,length=374415>
+##contig=<ID=chr8_KI270819v1_alt,length=133535>
+##contig=<ID=chr8_KI270820v1_alt,length=36640>
+##contig=<ID=chr8_KI270817v1_alt,length=158983>
+##contig=<ID=chr8_KI270816v1_alt,length=305841>
+##contig=<ID=chr8_KI270815v1_alt,length=132244>
+##contig=<ID=chr9_GL383539v1_alt,length=162988>
+##contig=<ID=chr9_GL383540v1_alt,length=71551>
+##contig=<ID=chr9_GL383541v1_alt,length=171286>
+##contig=<ID=chr9_GL383542v1_alt,length=60032>
+##contig=<ID=chr9_KI270823v1_alt,length=439082>
+##contig=<ID=chr10_GL383545v1_alt,length=179254>
+##contig=<ID=chr10_KI270824v1_alt,length=181496>
+##contig=<ID=chr10_GL383546v1_alt,length=309802>
+##contig=<ID=chr11_KI270832v1_alt,length=210133>
+##contig=<ID=chr11_KI270830v1_alt,length=177092>
+##contig=<ID=chr11_KI270831v1_alt,length=296895>
+##contig=<ID=chr11_KI270829v1_alt,length=204059>
+##contig=<ID=chr11_GL383547v1_alt,length=154407>
+##contig=<ID=chr11_JH159136v1_alt,length=200998>
+##contig=<ID=chr11_JH159137v1_alt,length=191409>
+##contig=<ID=chr11_KI270827v1_alt,length=67707>
+##contig=<ID=chr11_KI270826v1_alt,length=186169>
+##contig=<ID=chr12_GL877875v1_alt,length=167313>
+##contig=<ID=chr12_GL877876v1_alt,length=408271>
+##contig=<ID=chr12_KI270837v1_alt,length=40090>
+##contig=<ID=chr12_GL383549v1_alt,length=120804>
+##contig=<ID=chr12_KI270835v1_alt,length=238139>
+##contig=<ID=chr12_GL383550v2_alt,length=169178>
+##contig=<ID=chr12_GL383552v1_alt,length=138655>
+##contig=<ID=chr12_GL383553v2_alt,length=152874>
+##contig=<ID=chr12_KI270834v1_alt,length=119498>
+##contig=<ID=chr12_GL383551v1_alt,length=184319>
+##contig=<ID=chr12_KI270833v1_alt,length=76061>
+##contig=<ID=chr12_KI270836v1_alt,length=56134>
+##contig=<ID=chr13_KI270840v1_alt,length=191684>
+##contig=<ID=chr13_KI270839v1_alt,length=180306>
+##contig=<ID=chr13_KI270843v1_alt,length=103832>
+##contig=<ID=chr13_KI270841v1_alt,length=169134>
+##contig=<ID=chr13_KI270838v1_alt,length=306913>
+##contig=<ID=chr13_KI270842v1_alt,length=37287>
+##contig=<ID=chr14_KI270844v1_alt,length=322166>
+##contig=<ID=chr14_KI270847v1_alt,length=1511111>
+##contig=<ID=chr14_KI270845v1_alt,length=180703>
+##contig=<ID=chr14_KI270846v1_alt,length=1351393>
+##contig=<ID=chr15_KI270852v1_alt,length=478999>
+##contig=<ID=chr15_KI270851v1_alt,length=263054>
+##contig=<ID=chr15_KI270848v1_alt,length=327382>
+##contig=<ID=chr15_GL383554v1_alt,length=296527>
+##contig=<ID=chr15_KI270849v1_alt,length=244917>
+##contig=<ID=chr15_GL383555v2_alt,length=388773>
+##contig=<ID=chr15_KI270850v1_alt,length=430880>
+##contig=<ID=chr16_KI270854v1_alt,length=134193>
+##contig=<ID=chr16_KI270856v1_alt,length=63982>
+##contig=<ID=chr16_KI270855v1_alt,length=232857>
+##contig=<ID=chr16_KI270853v1_alt,length=2659700>
+##contig=<ID=chr16_GL383556v1_alt,length=192462>
+##contig=<ID=chr16_GL383557v1_alt,length=89672>
+##contig=<ID=chr17_GL383563v3_alt,length=375691>
+##contig=<ID=chr17_KI270862v1_alt,length=391357>
+##contig=<ID=chr17_KI270861v1_alt,length=196688>
+##contig=<ID=chr17_KI270857v1_alt,length=2877074>
+##contig=<ID=chr17_JH159146v1_alt,length=278131>
+##contig=<ID=chr17_JH159147v1_alt,length=70345>
+##contig=<ID=chr17_GL383564v2_alt,length=133151>
+##contig=<ID=chr17_GL000258v2_alt,length=1821992>
+##contig=<ID=chr17_GL383565v1_alt,length=223995>
+##contig=<ID=chr17_KI270858v1_alt,length=235827>
+##contig=<ID=chr17_KI270859v1_alt,length=108763>
+##contig=<ID=chr17_GL383566v1_alt,length=90219>
+##contig=<ID=chr17_KI270860v1_alt,length=178921>
+##contig=<ID=chr18_KI270864v1_alt,length=111737>
+##contig=<ID=chr18_GL383567v1_alt,length=289831>
+##contig=<ID=chr18_GL383570v1_alt,length=164789>
+##contig=<ID=chr18_GL383571v1_alt,length=198278>
+##contig=<ID=chr18_GL383568v1_alt,length=104552>
+##contig=<ID=chr18_GL383569v1_alt,length=167950>
+##contig=<ID=chr18_GL383572v1_alt,length=159547>
+##contig=<ID=chr18_KI270863v1_alt,length=167999>
+##contig=<ID=chr19_KI270868v1_alt,length=61734>
+##contig=<ID=chr19_KI270865v1_alt,length=52969>
+##contig=<ID=chr19_GL383573v1_alt,length=385657>
+##contig=<ID=chr19_GL383575v2_alt,length=170222>
+##contig=<ID=chr19_GL383576v1_alt,length=188024>
+##contig=<ID=chr19_GL383574v1_alt,length=155864>
+##contig=<ID=chr19_KI270866v1_alt,length=43156>
+##contig=<ID=chr19_KI270867v1_alt,length=233762>
+##contig=<ID=chr19_GL949746v1_alt,length=987716>
+##contig=<ID=chr20_GL383577v2_alt,length=128386>
+##contig=<ID=chr20_KI270869v1_alt,length=118774>
+##contig=<ID=chr20_KI270871v1_alt,length=58661>
+##contig=<ID=chr20_KI270870v1_alt,length=183433>
+##contig=<ID=chr21_GL383578v2_alt,length=63917>
+##contig=<ID=chr21_KI270874v1_alt,length=166743>
+##contig=<ID=chr21_KI270873v1_alt,length=143900>
+##contig=<ID=chr21_GL383579v2_alt,length=201197>
+##contig=<ID=chr21_GL383580v2_alt,length=74653>
+##contig=<ID=chr21_GL383581v2_alt,length=116689>
+##contig=<ID=chr21_KI270872v1_alt,length=82692>
+##contig=<ID=chr22_KI270875v1_alt,length=259914>
+##contig=<ID=chr22_KI270878v1_alt,length=186262>
+##contig=<ID=chr22_KI270879v1_alt,length=304135>
+##contig=<ID=chr22_KI270876v1_alt,length=263666>
+##contig=<ID=chr22_KI270877v1_alt,length=101331>
+##contig=<ID=chr22_GL383583v2_alt,length=96924>
+##contig=<ID=chr22_GL383582v2_alt,length=162811>
+##contig=<ID=chrX_KI270880v1_alt,length=284869>
+##contig=<ID=chrX_KI270881v1_alt,length=144206>
+##contig=<ID=chr1_KI270892v1_alt,length=162212>
+##contig=<ID=chr2_KI270894v1_alt,length=214158>
+##contig=<ID=chr2_KI270893v1_alt,length=161218>
+##contig=<ID=chr3_KI270895v1_alt,length=162896>
+##contig=<ID=chr4_KI270896v1_alt,length=378547>
+##contig=<ID=chr5_KI270897v1_alt,length=1144418>
+##contig=<ID=chr5_KI270898v1_alt,length=130957>
+##contig=<ID=chr6_GL000251v2_alt,length=4795265>
+##contig=<ID=chr7_KI270899v1_alt,length=190869>
+##contig=<ID=chr8_KI270901v1_alt,length=136959>
+##contig=<ID=chr8_KI270900v1_alt,length=318687>
+##contig=<ID=chr11_KI270902v1_alt,length=106711>
+##contig=<ID=chr11_KI270903v1_alt,length=214625>
+##contig=<ID=chr12_KI270904v1_alt,length=572349>
+##contig=<ID=chr15_KI270906v1_alt,length=196384>
+##contig=<ID=chr15_KI270905v1_alt,length=5161414>
+##contig=<ID=chr17_KI270907v1_alt,length=137721>
+##contig=<ID=chr17_KI270910v1_alt,length=157099>
+##contig=<ID=chr17_KI270909v1_alt,length=325800>
+##contig=<ID=chr17_JH159148v1_alt,length=88070>
+##contig=<ID=chr17_KI270908v1_alt,length=1423190>
+##contig=<ID=chr18_KI270912v1_alt,length=174061>
+##contig=<ID=chr18_KI270911v1_alt,length=157710>
+##contig=<ID=chr19_GL949747v2_alt,length=729520>
+##contig=<ID=chr22_KB663609v1_alt,length=74013>
+##contig=<ID=chrX_KI270913v1_alt,length=274009>
+##contig=<ID=chr3_KI270924v1_alt,length=166540>
+##contig=<ID=chr4_KI270925v1_alt,length=555799>
+##contig=<ID=chr6_GL000252v2_alt,length=4604811>
+##contig=<ID=chr8_KI270926v1_alt,length=229282>
+##contig=<ID=chr11_KI270927v1_alt,length=218612>
+##contig=<ID=chr19_GL949748v2_alt,length=1064304>
+##contig=<ID=chr22_KI270928v1_alt,length=176103>
+##contig=<ID=chr3_KI270934v1_alt,length=163458>
+##contig=<ID=chr6_GL000253v2_alt,length=4677643>
+##contig=<ID=chr19_GL949749v2_alt,length=1091841>
+##contig=<ID=chr3_KI270935v1_alt,length=197351>
+##contig=<ID=chr6_GL000254v2_alt,length=4827813>
+##contig=<ID=chr19_GL949750v2_alt,length=1066390>
+##contig=<ID=chr3_KI270936v1_alt,length=164170>
+##contig=<ID=chr6_GL000255v2_alt,length=4606388>
+##contig=<ID=chr19_GL949751v2_alt,length=1002683>
+##contig=<ID=chr3_KI270937v1_alt,length=165607>
+##contig=<ID=chr6_GL000256v2_alt,length=4929269>
+##contig=<ID=chr19_GL949752v1_alt,length=987100>
+##contig=<ID=chr6_KI270758v1_alt,length=76752>
+##contig=<ID=chr19_GL949753v2_alt,length=796479>
+##contig=<ID=chr19_KI270938v1_alt,length=1066800>
+##contig=<ID=chr19_KI270882v1_alt,length=248807>
+##contig=<ID=chr19_KI270883v1_alt,length=170399>
+##contig=<ID=chr19_KI270884v1_alt,length=157053>
+##contig=<ID=chr19_KI270885v1_alt,length=171027>
+##contig=<ID=chr19_KI270886v1_alt,length=204239>
+##contig=<ID=chr19_KI270887v1_alt,length=209512>
+##contig=<ID=chr19_KI270888v1_alt,length=155532>
+##contig=<ID=chr19_KI270889v1_alt,length=170698>
+##contig=<ID=chr19_KI270890v1_alt,length=184499>
+##contig=<ID=chr19_KI270891v1_alt,length=170680>
+##contig=<ID=chr19_KI270914v1_alt,length=205194>
+##contig=<ID=chr19_KI270915v1_alt,length=170665>
+##contig=<ID=chr19_KI270916v1_alt,length=184516>
+##contig=<ID=chr19_KI270917v1_alt,length=190932>
+##contig=<ID=chr19_KI270918v1_alt,length=123111>
+##contig=<ID=chr19_KI270919v1_alt,length=170701>
+##contig=<ID=chr19_KI270920v1_alt,length=198005>
+##contig=<ID=chr19_KI270921v1_alt,length=282224>
+##contig=<ID=chr19_KI270922v1_alt,length=187935>
+##contig=<ID=chr19_KI270923v1_alt,length=189352>
+##contig=<ID=chr19_KI270929v1_alt,length=186203>
+##contig=<ID=chr19_KI270930v1_alt,length=200773>
+##contig=<ID=chr19_KI270931v1_alt,length=170148>
+##contig=<ID=chr19_KI270932v1_alt,length=215732>
+##contig=<ID=chr19_KI270933v1_alt,length=170537>
+##contig=<ID=chr19_GL000209v2_alt,length=177381>
+##contig=<ID=chrM,length=16569>
+##ALT=<ID=*,Description="Represents allele(s) other than observed.">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=IDV,Number=1,Type=Integer,Description="Maximum number of raw reads supporting an indel">
+##INFO=<ID=IMF,Number=1,Type=Float,Description="Maximum fraction of raw reads supporting an indel">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias for filtering splice-site artefacts in RNA-seq data (bigger is better)",Version="3">
+##INFO=<ID=RPBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Read Position Bias (closer to 0 is better)">
+##INFO=<ID=MQBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Mapping Quality Bias (closer to 0 is better)">
+##INFO=<ID=BQBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Base Quality Bias (closer to 0 is better)">
+##INFO=<ID=MQSBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Mapping Quality vs Strand Bias (closer to 0 is better)">
+##INFO=<ID=SCBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Soft-Clip Length Bias (closer to 0 is better)">
+##INFO=<ID=SGB,Number=1,Type=Float,Description="Segregation based metric, http://samtools.github.io/bcftools/rd-SegBias.pdf">
+##INFO=<ID=MQ0F,Number=1,Type=Float,Description="Fraction of MQ0 reads (smaller is better)">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
+##bcftools_callVersion=1.17+htslib-1.17
+##bcftools_callCommand=call -Ou -mv; Date=Tue May 16 16:02:06 2023
+##FILTER=<ID=SnpGap,Description="SNP within 3 bp of indel">
+##FILTER=<ID=IndelGap,Description="Indel within 10 bp of an indel">
+##bcftools_filterVersion=1.17+htslib-1.17
+##bcftools_filterCommand=filter -g3 -G10 -e 'QUAL<15 || (DP4[0]+DP4[1] == 0) || DP < 10'; Date=Tue May 16 16:02:17 2023
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	results/SRR18488115/result.sorted.bam
+chr1	632657	.	G	A,T	22.9724	PASS	DP=34;VDB=2.17635e-09;SGB=-0.693079;RPBZ=0.409066;MQBZ=0;BQBZ=-1.96382;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=0,5,0,29;MQ=20	GT:PL	1/2:82,35,45,38,0,58
+chr1	40754395	.	G	T	120.195	PASS	DP=1056;VDB=0;SGB=-0.693147;RPBZ=23.5968;MQBZ=0;BQBZ=3.28214;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=58,0,998,0;MQ=20	GT:PL	1/1:147,255,0
+chr1	40757324	.	G	T	101.117	PASS	DP=313;VDB=0;SGB=-0.693147;RPBZ=12.9872;MQBZ=0;BQBZ=-1.57464;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=22,0,291,0;MQ=20	GT:PL	1/1:128,255,0
+chr1	71067678	.	G	A	136.417	PASS	DP=509;VDB=0;SGB=-0.693147;RPBZ=0.846213;MQBZ=0;BQBZ=3.17937;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,2,0,507;MQ=20	GT:PL	1/1:163,255,0
+chr1	93846901	.	C	T	44.1582	PASS	DP=33;VDB=3.75937e-20;SGB=-0.69311;RPBZ=0;MQBZ=0;BQBZ=2.24192;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=2,0,31,0;MQ=20	GT:PL	1/1:71,57,0
+chr1	109598962	.	A	T	19.3666	PASS	DP=21;VDB=1.80289e-05;SGB=-0.662043;RPBZ=1.30942;MQBZ=0;BQBZ=0.446258;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=12,0,9,0;MQ=20	GT:PL	0/1:52,0,62
+chr1	116671807	.	A	T	15.7836	PASS	DP=43;VDB=7.03703e-15;SGB=-0.69312;RPBZ=0.863898;MQBZ=0;BQBZ=-1.66858;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=11,0,32,0;MQ=20	GT:PL	0/1:49,0,28
+chr1	116671807	.	A	T	15.7836	PASS	DP=43;VDB=7.03703e-15;SGB=-0.69312;RPBZ=0.863898;MQBZ=0;BQBZ=-1.66858;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=11,0,32,0;MQ=20	GT:PL	0/1:49,0,28
+chr1	117094679	.	T	A	47.1723	PASS	DP=20;VDB=2.35735e-11;SGB=-0.69168;RPBZ=0;MQBZ=0;BQBZ=-1.15997;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=1,0,19,0;MQ=20	GT:PL	1/1:85,40,11
+chr1	155195259	.	G	A	53.2664	PASS	DP=450;VDB=0;SGB=-0.693147;RPBZ=7.92221;MQBZ=0;BQBZ=2.36268;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=11,0,439,0;MQ=20	GT:PL	1/1:80,255,0
+chr1	172138879	.	G	T	27.3724	PASS	DP=22;VDB=4.87158e-08;SGB=-0.683931;RPBZ=3.45515;MQBZ=0;BQBZ=0.682029;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=9,0,13,0;MQ=20	GT:PL	0/1:60,0,52
+chr1	172138879	.	G	T	27.3724	PASS	DP=22;VDB=4.87158e-08;SGB=-0.683931;RPBZ=3.45515;MQBZ=0;BQBZ=0.682029;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=9,0,13,0;MQ=20	GT:PL	0/1:60,0,52
+chr1	172144553	.	C	A,T	60.7715	PASS	DP=742;VDB=0;SGB=-0.693147;RPBZ=-4.1953;MQBZ=0;BQBZ=2.56935;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=0,11,0,731;MQ=20	GT:PL	1/2:120,255,57,255,0,59
+chr1	172144591	.	T	A	94.963	PASS	DP=379;VDB=0;SGB=-0.693147;RPBZ=-5.7653;MQBZ=0;BQBZ=1.34319;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,41,0,338;MQ=20	GT:PL	1/1:122,255,0
+chr1	175968437	.	T	A	25.4126	PASS	DP=17;VDB=3.1543e-08;SGB=-0.686358;RPBZ=-2.54484;MQBZ=0;BQBZ=2.46585;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,3,0,14;MQ=20	GT:PL	0/1:58,0,10
+chr1	198859105	.	C	A	49.1421	PASS	DP=124;VDB=0;SGB=-0.693147;RPBZ=-9.52264;MQBZ=0;BQBZ=1.67667;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,8,0,116;MQ=20	GT:PL	1/1:76,223,0
+chr1	207801864	.	A	T	20.6681	PASS	DP=26;VDB=2.37058e-14;SGB=-0.692352;RPBZ=-0.0443309;MQBZ=0;BQBZ=-1.61981;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,5,0,21;MQ=20	GT:PL	0/1:62,8,26
+chr1	224257050	.	T	A	21.8704	PASS	DP=40;VDB=4.13421e-14;SGB=-0.693021;RPBZ=-3.08428;MQBZ=0;BQBZ=0;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,13,0,27;MQ=20	GT:PL	0/1:55,0,37
+chr1	224257050	.	T	A	21.8704	PASS	DP=40;VDB=4.13421e-14;SGB=-0.693021;RPBZ=-3.08428;MQBZ=0;BQBZ=0;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,13,0,27;MQ=20	GT:PL	0/1:55,0,37
+chr10	89592756	.	T	A	32.2825	PASS	DP=824;VDB=0;SGB=-0.693147;RPBZ=-9.748;MQBZ=0;BQBZ=5.37172;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,220,0,604;MQ=20	GT:PL	1/1:60,57,0
+chr10	89592756	.	T	A	29.2851	PASS	DP=824;VDB=0;SGB=-0.693147;RPBZ=-9.748;MQBZ=0;BQBZ=5.37172;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,220,0,604;MQ=20	GT:PL	1/1:57,46,0
+chr10	102436544	.	G	T	77.3098	PASS	DP=214;VDB=0;SGB=-0.693147;RPBZ=5.78483;MQBZ=0;BQBZ=-1.35733;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=5,0,209,0;MQ=20	GT:PL	1/1:104,255,0
+chr10	102436579	.	G	A,T	18.7046	PASS	DP=11;VDB=1.17174e-06;SGB=-0.670168;RPBZ=1.77281;MQBZ=0;BQBZ=0.886405;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=1,0,10,0;MQ=20	GT:PL	1/2:76,36,35,43,0,44
+chr11	568110	.	G	A	39.0879	PASS	DP=15;VDB=1.56608e-07;SGB=-0.686358;RPBZ=-1.93649;MQBZ=0;BQBZ=1.49404;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,1,0,14;MQ=20	GT:PL	1/1:79,27,13
+chr11	72615101	.	C	A,T	20.8007	PASS	DP=19;VDB=3.42039e-10;SGB=-0.689466;RPBZ=-1.76571;MQBZ=0;BQBZ=-1.01215;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=0,3,0,16;MQ=20	GT:PL	1/2:79,32,46,35,0,51
+chr11	75335107	.	G	A,T	38.7696	PASS	DP=83;VDB=0;SGB=-0.693147;RPBZ=0;MQBZ=0;BQBZ=-0.525476;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=0,2,0,81;MQ=20	GT:PL	1/2:97,151,38,116,0,48
+chr11	96341455	.	A	G	112.222	PASS	DP=1127;VDB=0;SGB=-0.693147;RPBZ=3.34644;MQBZ=0;BQBZ=1.63852;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=55,0,1072,0;MQ=20	GT:PL	1/1:139,255,0
+chr11	96341455	.	A	G	113.222	PASS	DP=1127;VDB=0;SGB=-0.693147;RPBZ=3.34644;MQBZ=0;BQBZ=1.63852;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=55,0,1072,0;MQ=20	GT:PL	1/1:140,255,0
+chr11	122146590	.	A	G	49.2457	PASS	DP=44;VDB=1.3561e-26;SGB=-0.693146;RPBZ=0.387073;MQBZ=0;BQBZ=1.96015;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,2,0,42;MQ=20	GT:PL	1/1:76,95,0
+chr12	54337300	.	C	T	135.359	PASS	DP=7362;VDB=0;SGB=-0.693147;RPBZ=-11.0204;MQBZ=0;BQBZ=5.31148;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=128,0,7234,0;MQ=20	GT:PL	1/1:162,255,0
+chr12	57824657	.	C	A	92.3572	PASS	DP=15082;VDB=0;SGB=-0.693147;RPBZ=-3.78628;MQBZ=0;BQBZ=2.34535;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,222,0,14860;MQ=20	GT:PL	1/1:119,255,0
+chr12	62603713	.	G	A,T	63.5718	PASS	DP=2436;VDB=0;SGB=-0.693147;RPBZ=0.963681;MQBZ=0;BQBZ=0.521837;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=14,0,2422,0;MQ=20	GT:PL	1/2:122,255,39,255,0,60
+chr12	95308500	.	A	C	30.2936	PASS	DP=31;VDB=1.29641e-11;SGB=-0.691153;RPBZ=4.39383;MQBZ=0;BQBZ=0.343721;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=13,0,18,0;MQ=20	GT:PL	0/1:63,0,54
+chr12	95308501	.	C	T	21.2623	PASS	DP=10;VDB=0.000411984;SGB=-0.616816;RPBZ=1.83712;MQBZ=0;BQBZ=0;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=4,0,6,0;MQ=20	GT:PL	0/1:54,0,36
+chr12	95308500	.	A	C	30.2936	PASS	DP=31;VDB=1.29641e-11;SGB=-0.691153;RPBZ=4.39383;MQBZ=0;BQBZ=0.343721;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=13,0,18,0;MQ=20	GT:PL	0/1:63,0,54
+chr13	50049166	.	C	A	16.5033	PASS	DP=71;VDB=3.75937e-20;SGB=-0.693141;RPBZ=-6.48438;MQBZ=0;BQBZ=3.18536;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,34,0,37;MQ=20	GT:PL	0/1:49,0,51
+chr13	91350678	.	A	T	45.1024	PASS	DP=27;VDB=3.88021e-15;SGB=-0.692914;RPBZ=2.03961;MQBZ=0;BQBZ=0.954411;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=2,0,25,0;MQ=20	GT:PL	1/1:72,42,0
+chr13	91350819	.	G	T	17.8984	PASS	DP=47;VDB=3.75937e-20;SGB=-0.69312;RPBZ=0;MQBZ=0;BQBZ=-0.611637;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=15,0,32,0;MQ=20	GT:PL	0/1:51,0,35
+chr13	91350819	.	G	T	17.8984	PASS	DP=47;VDB=3.75937e-20;SGB=-0.69312;RPBZ=0;MQBZ=0;BQBZ=-0.611637;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=15,0,32,0;MQ=20	GT:PL	0/1:51,0,35
+chr13	91351096	.	G	T	43.0942	PASS	DP=15;VDB=1.35524e-07;SGB=-0.686358;RPBZ=1.65831;MQBZ=0;BQBZ=-0.594964;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=1,0,14,0;MQ=20	GT:PL	1/1:81,28,11
+chr13	91351384	.	G	T	48.6936	PASS	DP=15060;VDB=0;SGB=-0.693147;RPBZ=6.83494;MQBZ=0;BQBZ=7.62515;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=2021,0,13039,0;MQ=20	GT:PL	1/1:76,234,0
+chr14	65471112	.	G	T	20.1578	PASS	DP=30;VDB=4.8098e-15;SGB=-0.692562;RPBZ=-1.03063;MQBZ=0;BQBZ=-0.919779;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,8,0,22;MQ=20	GT:PL	0/1:59,8,48
+chr14	65471138	.	G	T	20.3769	PASS	DP=32;VDB=5.54295e-10;SGB=-0.688148;RPBZ=1.01877;MQBZ=0;BQBZ=1.66662;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=17,0,15,0;MQ=20	GT:PL	0/1:53,0,60
+chr14	65471150	.	C	A	24.42	PASS	DP=29;VDB=5.54297e-10;SGB=-0.688148;RPBZ=0.966092;MQBZ=0;BQBZ=1.59269;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,14,0,15;MQ=20	GT:PL	0/1:57,0,59
+chr14	65471176	.	C	A	20.1578	PASS	DP=30;VDB=4.8098e-15;SGB=-0.692562;RPBZ=1.03063;MQBZ=0;BQBZ=-0.919779;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=8,0,22,0;MQ=20	GT:PL	0/1:59,8,48
+chr14	77266239	.	T	G	121.282	PASS	DP=679;VDB=0;SGB=-0.693147;RPBZ=-1.61939;MQBZ=0;BQBZ=6.89166;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=26,0,653,0;MQ=20	GT:PL	1/1:148,255,0
+chr14	77266239	.	T	G	124.282	PASS	DP=679;VDB=0;SGB=-0.693147;RPBZ=-1.61939;MQBZ=0;BQBZ=6.89166;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=26,0,653,0;MQ=20	GT:PL	1/1:151,255,0
+chr14	100109435	.	T	A	16.4457	PASS	DP=41;VDB=4.30322e-13;SGB=-0.692976;RPBZ=2.7867;MQBZ=0;BQBZ=-0.443265;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,15,0,26;MQ=20	GT:PL	0/1:48,0,51
+chr14	100109698	.	C	T	21.4165	PASS	DP=59;VDB=3.75937e-20;SGB=-0.69312;RPBZ=3.28373;MQBZ=0;BQBZ=4.52884;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=27,0,32,0;MQ=20	GT:PL	0/1:54,0,51
+chr14	100109739	.	A	T	19.1525	PASS	DP=320;VDB=0;SGB=-0.693147;RPBZ=9.37476;MQBZ=0;BQBZ=12.5662;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=101,0,219,0;MQ=20	GT:PL	1/1:47,18,0
+chr14	100307898	.	G	T	51.2667	PASS	DP=29;VDB=6.12223e-15;SGB=-0.693054;RPBZ=2.5;MQBZ=0;BQBZ=-0.609384;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=1,0,28,0;MQ=20	GT:PL	1/1:78,61,0
+chr14	100883057	.	G	T	93.2971	PASS	DP=1338;VDB=0;SGB=-0.693147;RPBZ=26.0281;MQBZ=0;BQBZ=6.12343;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=35,0,1303,0;MQ=20	GT:PL	1/1:120,255,0
+chr14	100883058	.	G	T	21.4049	PASS	DP=53;VDB=6.63425e-19;SGB=-0.69311;RPBZ=-0.585557;MQBZ=0;BQBZ=0.552314;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=22,0,31,0;MQ=20	GT:PL	0/1:54,0,51
+chr14	100884519	.	A	T	19.304	PASS	DP=32;VDB=9.10993e-08;SGB=-0.683931;RPBZ=2.98753;MQBZ=0;BQBZ=-2.49287;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=19,0,13,0;MQ=20	GT:PL	0/1:52,0,62
+chr14	101032055	.	T	A	28.404	PASS	DP=17;VDB=4.02745e-08;SGB=-0.683931;RPBZ=0.911465;MQBZ=0;BQBZ=0.25535;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=4,0,13,0;MQ=20	GT:PL	0/1:62,0,19
+chr14	101046527	.	T	A	22.4123	PASS	DP=44;VDB=3.48182e-15;SGB=-0.692352;RPBZ=1.90962;MQBZ=0;BQBZ=-1.33926;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=23,0,21,0;MQ=20	GT:PL	0/1:55,0,58
+chr14	101054716	.	C	T,A	36.2686	PASS	DP=87;VDB=1.14346e-42;SGB=-0.693147;RPBZ=-0.699574;MQBZ=0;BQBZ=-0.728787;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=3,0,84,0;MQ=20	GT:PL	1/2:95,138,41,115,0,48
+chr15	85380662	.	A	T	24.3951	PASS	DP=50;VDB=1.30483e-15;SGB=-0.693021;RPBZ=1.91533;MQBZ=0;BQBZ=0.83377;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=23,0,27,0;MQ=20	GT:PL	0/1:57,0,54
+chr15	85380662	.	A	T	24.3951	PASS	DP=50;VDB=1.30483e-15;SGB=-0.693021;RPBZ=1.91533;MQBZ=0;BQBZ=0.83377;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=23,0,27,0;MQ=20	GT:PL	0/1:57,0,54
+chr16	1735059	.	G	T	23.7614	PASS	DP=11;VDB=1.33331e-05;SGB=-0.651104;RPBZ=3.16228;MQBZ=0;BQBZ=2.42212;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=3,0,8,0;MQ=20	GT:PL	0/1:57,0,21
+chr16	14926003	.	G	T	27.3437	PASS	DP=16;VDB=5.52906e-06;SGB=-0.662043;RPBZ=1.65616;MQBZ=0;BQBZ=-0.466569;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=7,0,9,0;MQ=20	GT:PL	0/1:60,0,50
+chr16	15643323	.	A	T	26.392	PASS	DP=781;VDB=0;SGB=-0.693147;RPBZ=9.54709;MQBZ=0;BQBZ=5.8243;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=354,0,427,0;MQ=20	GT:PL	0/1:59,0,58
+chr16	15643325	.	A	T	27.1762	PASS	DP=13;VDB=1.33331e-05;SGB=-0.651104;RPBZ=1.26491;MQBZ=0;BQBZ=1.00502;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=5,0,8,0;MQ=20	GT:PL	0/1:60,0,39
+chr16	16324654	.	G	T	27.3437	PASS	DP=16;VDB=5.52906e-06;SGB=-0.662043;RPBZ=1.65616;MQBZ=0;BQBZ=-0.466569;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=7,0,9,0;MQ=20	GT:PL	0/1:60,0,50
+chr16	16368942	.	G	T	27.3437	PASS	DP=16;VDB=5.52906e-06;SGB=-0.662043;RPBZ=1.65616;MQBZ=0;BQBZ=-0.466569;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=7,0,9,0;MQ=20	GT:PL	0/1:60,0,50
+chr16	18344013	.	C	A	27.3437	PASS	DP=16;VDB=5.52906e-06;SGB=-0.662043;RPBZ=-1.65616;MQBZ=0;BQBZ=-0.466569;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,7,0,9;MQ=20	GT:PL	0/1:60,0,50
+chr16	67202325	.	G	A	35.0578	PASS	DP=38;VDB=3.75937e-20;SGB=-0.693136;RPBZ=-3.41565;MQBZ=0;BQBZ=-0.16444;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,3,0,35;MQ=20	GT:PL	1/1:62,49,0
+chr16	67202326	.	G	A	75.05	PASS	DP=687;VDB=0;SGB=-0.693147;RPBZ=-19.773;MQBZ=0;BQBZ=4.00873;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,49,0,638;MQ=20	GT:PL	1/1:102,255,0
+chr16	69933125	.	G	T	32.0957	PASS	DP=19;VDB=2.26006e-08;SGB=-0.680642;RPBZ=3.71416;MQBZ=0;BQBZ=1.25273;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=7,0,12,0;MQ=20	GT:PL	0/1:65,0,43
+chr16	69933165	.	A	T	127.317	PASS	DP=3522;VDB=0;SGB=-0.693147;RPBZ=6.32598;MQBZ=0;BQBZ=0.899437;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=95,0,3427,0;MQ=20	GT:PL	1/1:154,255,0
+chr16	88469007	.	C	T	16.27	PASS	DP=26;VDB=6.99472e-07;SGB=-0.670168;RPBZ=3.50423;MQBZ=0;BQBZ=1.27696;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=16,0,10,0;MQ=20	GT:PL	0/1:49,0,64
+chr16	88469008	.	A	T	23.0304	PASS	DP=12;VDB=1.60207e-05;SGB=-0.651104;RPBZ=2.34743;MQBZ=0;BQBZ=1.11427;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=4,0,8,0;MQ=20	GT:PL	0/1:56,0,29
+chr17	1713913	.	A	T	45.2434	PASS	DP=408;VDB=0;SGB=-0.693147;RPBZ=-5.19853;MQBZ=0;BQBZ=-5.30329;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,112,0,296;MQ=20	GT:PL	1/1:73,108,0
+chr17	2049928	.	G	A	36.9421	PASS	DP=17;VDB=4.49525e-10;SGB=-0.688148;RPBZ=0;MQBZ=0;BQBZ=-0.804748;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,2,0,15;MQ=20	GT:PL	1/1:64,8,0
+chr17	12081931	.	G	T,A	20.5361	PASS	DP=225;VDB=0;SGB=-0.693147;RPBZ=3.65463;MQBZ=0;BQBZ=-0.401676;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=20,0,205,0;MQ=20	GT:PL	1/2:79,162,38,133,0,49
+chr17	30117119	.	C	T	112.31	PASS	DP=3218;VDB=0;SGB=-0.693147;RPBZ=1.59065;MQBZ=0;BQBZ=7.16908;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=83,0,3135,0;MQ=20	GT:PL	1/1:139,255,0
+chr17	30117154	.	C	T	81.3579	PASS	DP=7706;VDB=0;SGB=-0.693147;RPBZ=8.10936;MQBZ=0;BQBZ=-1.35579;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=102,0,7604,0;MQ=20	GT:PL	1/1:108,255,0
+chr17	30117119	.	C	T	107.31	PASS	DP=3218;VDB=0;SGB=-0.693147;RPBZ=1.59065;MQBZ=0;BQBZ=7.16908;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=83,0,3135,0;MQ=20	GT:PL	1/1:134,255,0
+chr17	30117154	.	C	T	73.3578	PASS	DP=7706;VDB=0;SGB=-0.693147;RPBZ=8.10936;MQBZ=0;BQBZ=-1.35579;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=102,0,7604,0;MQ=20	GT:PL	1/1:100,255,0
+chr17	42514230	.	C	T	28.7001	PASS	DP=24;VDB=1.29641e-11;SGB=-0.690438;RPBZ=2.25342;MQBZ=0;BQBZ=-0.159264;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=7,0,17,0;MQ=20	GT:PL	0/1:62,0,33
+chr17	42514289	.	A	T	20.3695	PASS	DP=21;VDB=6.61498e-06;SGB=-0.662043;RPBZ=0.209427;MQBZ=0;BQBZ=0.554092;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=12,0,9,0;MQ=20	GT:PL	0/1:53,0,62
+chr17	48037172	.	G	T	49.1431	PASS	DP=152;VDB=0;SGB=-0.693147;RPBZ=-2.64998;MQBZ=0;BQBZ=2.13622;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,9,0,143;MQ=20	GT:PL	1/1:76,248,0
+chr17	58331306	.	T	G	21.2623	PASS	DP=10;VDB=0.000411984;SGB=-0.616816;RPBZ=0;MQBZ=0;BQBZ=-0.353553;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,4,0,6;MQ=20	GT:PL	0/1:54,0,36
+chr17	74748686	.	G	T	77.974	PASS	DP=739;VDB=0;SGB=-0.693147;RPBZ=12.7849;MQBZ=0;BQBZ=-1.18099;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=71,0,668,0;MQ=20	GT:PL	1/1:105,255,0
+chr17	74748687	.	G	T,A	33.5519	PASS	DP=18;VDB=1.29641e-11;SGB=-0.689466;RPBZ=2.82843;MQBZ=0;BQBZ=0.543198;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=2,0,16,0;MQ=20	GT:PL	1/2:93,44,45,52,0,57
+chr18	21683578	.	T	A	30.2985	PASS	DP=19;VDB=2.58051e-07;SGB=-0.676189;RPBZ=-0.304191;MQBZ=0;BQBZ=0.908097;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=8,0,11,0;MQ=20	GT:PL	0/1:63,0,50
+chr18	21683578	.	T	A	30.2985	PASS	DP=19;VDB=2.58051e-07;SGB=-0.676189;RPBZ=-0.304191;MQBZ=0;BQBZ=0.908097;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=8,0,11,0;MQ=20	GT:PL	0/1:63,0,50
+chr18	24321735	.	T	A	32.1966	PASS	DP=23;VDB=8.92934e-07;SGB=-0.686358;RPBZ=-0.563297;MQBZ=0;BQBZ=1.37527;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=9,0,14,0;MQ=20	GT:PL	0/1:65,0,49
+chr18	24321735	.	T	A	32.1966	PASS	DP=23;VDB=8.92934e-07;SGB=-0.686358;RPBZ=-0.563297;MQBZ=0;BQBZ=1.37527;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=9,0,14,0;MQ=20	GT:PL	0/1:65,0,49
+chr19	10817428	.	C	A,T	60.3824	PASS	DP=648;VDB=0;SGB=-0.693147;RPBZ=-0.579075;MQBZ=0;BQBZ=0.882288;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=0,4,0,644;MQ=20	GT:PL	1/2:118,255,36,255,0,59
+chr19	10817468	.	T	A	90.963	PASS	DP=379;VDB=0;SGB=-0.693147;RPBZ=-5.7653;MQBZ=0;BQBZ=1.34319;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,41,0,338;MQ=20	GT:PL	1/1:118,255,0
+chr19	13836288	.	C	A,T	45.1536	PASS	DP=115;VDB=0;SGB=-0.693147;RPBZ=-0.0936586;MQBZ=0;BQBZ=-1.15206;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=0,1,0,114;MQ=20	GT:PL	1/2:104,211,44,190,0,49
+chr19	13836446	.	G	A	85.2285	PASS	DP=301;VDB=0;SGB=-0.693147;RPBZ=0.654268;MQBZ=0;BQBZ=1.51125;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,12,0,289;MQ=20	GT:PL	1/1:112,255,0
+chr19	13836592	.	G	A	30.6224	PASS	DP=166;VDB=0;SGB=-0.693147;RPBZ=-10.6134;MQBZ=0;BQBZ=-1.06358;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,30,0,136;MQ=20	GT:PL	1/1:58,117,0
+chr19	13874934	.	G	T	23.3523	PASS	DP=28;VDB=1.78463e-14;SGB=-0.692352;RPBZ=4.02492;MQBZ=0;BQBZ=-0.11346;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=7,0,21,0;MQ=20	GT:PL	0/1:57,0,24
+chr19	45639006	.	G	A	47.2054	PASS	DP=37;VDB=3.75937e-20;SGB=-0.693136;RPBZ=-4.1833;MQBZ=0;BQBZ=1.25635;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,2,0,35;MQ=20	GT:PL	1/1:74,71,0
+chr19	49500831	.	G	T,A	58.7538	PASS	DP=37;VDB=3.75937e-20;SGB=-0.693139;RPBZ=0;MQBZ=0;BQBZ=1.76757;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=0,1,0,36;MQ=20	GT:PL	1/2:118,94,54,91,0,57
+chr19	51692815	.	G	T	29.4982	PASS	DP=500;VDB=0;SGB=-0.693147;RPBZ=8.04885;MQBZ=0;BQBZ=2.09871;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=89,0,411,0;MQ=20	GT:PL	1/1:57,96,0
+chr19	51693292	.	G	A	63.3575	PASS	DP=130;VDB=0;SGB=-0.693147;RPBZ=11.3578;MQBZ=0;BQBZ=-1.20778;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=2,0,128,0;MQ=20	GT:PL	1/1:90,255,0
+chr2	64340767	.	T	A	30.2709	PASS	DP=17;VDB=1.09918e-06;SGB=-0.670168;RPBZ=-0.864438;MQBZ=0;BQBZ=1.24326;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,7,0,10;MQ=20	GT:PL	0/1:63,0,48
+chr2	64340806	.	C	T,A	18.5791	PASS	DP=58;VDB=5.45259e-41;SGB=-0.693147;RPBZ=-0.607778;MQBZ=0;BQBZ=0.0151618;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=0,7,0,51;MQ=20	GT:PL	1/2:78,52,46,43,0,52
+chr2	64340767	.	T	A	30.2709	PASS	DP=17;VDB=1.09918e-06;SGB=-0.670168;RPBZ=-0.864438;MQBZ=0;BQBZ=1.24326;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,7,0,10;MQ=20	GT:PL	0/1:63,0,48
+chr2	64340806	.	C	T,A	18.5791	PASS	DP=58;VDB=5.45259e-41;SGB=-0.693147;RPBZ=-0.607778;MQBZ=0;BQBZ=0.0151618;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=0,7,0,51;MQ=20	GT:PL	1/2:78,52,46,43,0,52
+chr2	87629786	.	G	T	39.0616	PASS	DP=29;VDB=4.08607e-15;SGB=-0.693021;RPBZ=0;MQBZ=0;BQBZ=0.441225;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=2,0,27,0;MQ=20	GT:PL	1/1:74,40,8
+chr2	111321060	.	C	A	39.0616	PASS	DP=29;VDB=4.08607e-15;SGB=-0.693021;RPBZ=0;MQBZ=0;BQBZ=0.441225;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,2,0,27;MQ=20	GT:PL	1/1:74,40,8
+chr2	218402679	.	G	T	54.0908	PASS	DP=2423;VDB=0;SGB=-0.693147;RPBZ=10.083;MQBZ=0;BQBZ=-0.359078;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=123,0,2300,0;MQ=20	GT:PL	1/1:81,255,0
+chr20	3917540	.	A	C	45.0344	PASS	DP=10;VDB=5.52906e-06;SGB=-0.662043;RPBZ=0;MQBZ=0;BQBZ=0.941554;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=1,0,9,0;MQ=20	GT:PL	1/1:72,10,0
+chr20	3917564	.	A	T	53.5943	PASS	DP=2139;VDB=0;SGB=-0.693147;RPBZ=10.0119;MQBZ=0;BQBZ=4.25625;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=412,0,1727,0;MQ=20	GT:PL	1/1:81,143,0
+chr20	3917540	.	A	C	45.0344	PASS	DP=10;VDB=5.52906e-06;SGB=-0.662043;RPBZ=0;MQBZ=0;BQBZ=0.941554;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=1,0,9,0;MQ=20	GT:PL	1/1:72,10,0
+chr20	63286842	.	G	T,A	52.8255	PASS	DP=59;VDB=0;SGB=-0.693147;RPBZ=0;MQBZ=0;BQBZ=-0.698502;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=1,0,58,0;MQ=20	GT:PL	1/2:112,126,51,117,0,54
+chr20	63919518	.	C	T	48.1532	PASS	DP=112;VDB=0;SGB=-0.693147;RPBZ=0;MQBZ=0;BQBZ=1.93282;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=7,0,105,0;MQ=20	GT:PL	1/1:75,211,0
+chr20	63919518	.	C	T	48.1532	PASS	DP=112;VDB=0;SGB=-0.693147;RPBZ=0;MQBZ=0;BQBZ=1.93282;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=7,0,105,0;MQ=20	GT:PL	1/1:75,211,0
+chr20	63919574	.	C	T	48.1532	PASS	DP=112;VDB=0;SGB=-0.693147;RPBZ=0;MQBZ=0;BQBZ=1.93282;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=7,0,105,0;MQ=20	GT:PL	1/1:75,211,0
+chr20	63919574	.	C	T	48.1532	PASS	DP=112;VDB=0;SGB=-0.693147;RPBZ=0;MQBZ=0;BQBZ=1.93282;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=7,0,105,0;MQ=20	GT:PL	1/1:75,211,0
+chr20	63919630	.	C	T	48.1532	PASS	DP=112;VDB=0;SGB=-0.693147;RPBZ=0;MQBZ=0;BQBZ=1.93282;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=7,0,105,0;MQ=20	GT:PL	1/1:75,211,0
+chr20	63919769	.	C	T	48.1532	PASS	DP=112;VDB=0;SGB=-0.693147;RPBZ=0;MQBZ=0;BQBZ=1.93282;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=7,0,105,0;MQ=20	GT:PL	1/1:75,211,0
+chr20	63919825	.	C	T	48.1532	PASS	DP=112;VDB=0;SGB=-0.693147;RPBZ=0;MQBZ=0;BQBZ=1.93282;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=7,0,105,0;MQ=20	GT:PL	1/1:75,211,0
+chr20	63919881	.	C	T	48.1532	PASS	DP=112;VDB=0;SGB=-0.693147;RPBZ=0;MQBZ=0;BQBZ=1.93282;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=7,0,105,0;MQ=20	GT:PL	1/1:75,211,0
+chr20	63919937	.	C	T	48.1532	PASS	DP=112;VDB=0;SGB=-0.693147;RPBZ=0;MQBZ=0;BQBZ=1.93282;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=7,0,105,0;MQ=20	GT:PL	1/1:75,211,0
+chr21	16590275	.	G	A	54.1365	PASS	DP=15;VDB=2.26006e-08;SGB=-0.686358;RPBZ=0;MQBZ=0;BQBZ=-0.692488;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=1,0,14,0;MQ=20	GT:PL	1/1:81,25,0
+chr22	20033209	.	C	T	40.149	PASS	DP=37;VDB=3.75937e-20;SGB=-0.693136;RPBZ=4.1833;MQBZ=0;BQBZ=1.21705;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=2,0,35,0;MQ=20	GT:PL	1/1:67,55,0
+chr22	20033209	.	C	T	40.149	PASS	DP=37;VDB=3.75937e-20;SGB=-0.693136;RPBZ=4.1833;MQBZ=0;BQBZ=1.21705;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=2,0,35,0;MQ=20	GT:PL	1/1:67,55,0
+chr22	21653376	.	C	T	90.3185	PASS	DP=840;VDB=0;SGB=-0.693147;RPBZ=7.72691;MQBZ=0;BQBZ=5.38713;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=18,0,822,0;MQ=20	GT:PL	1/1:117,255,0
+chr22	41923283	.	T	A	45.0636	PASS	DP=24;VDB=4.9717e-15;SGB=-0.692562;RPBZ=3.54013;MQBZ=0;MQSBZ=0;BQBZ=-0.301511;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=2,0,0,22;MQ=20	GT:PL	1/1:72,33,0
+chr22	41923283	.	T	A	45.0636	PASS	DP=24;VDB=4.9717e-15;SGB=-0.692562;RPBZ=3.54013;MQBZ=0;MQSBZ=0;BQBZ=-0.301511;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=2,0,0,22;MQ=20	GT:PL	1/1:72,33,0
+chr22	46112751	.	G	C	17.4813	PASS	DP=83;VDB=1.35612e-26;SGB=-0.693146;RPBZ=-0.994333;MQBZ=0;BQBZ=4.82701;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=41,0,42,0;MQ=20	GT:PL	0/1:50,0,50
+chr22	46112821	.	C	T	25.3627	PASS	DP=45;VDB=1.30483e-15;SGB=-0.692914;RPBZ=5.50861;MQBZ=0;BQBZ=1.71719;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=20,0,25,0;MQ=20	GT:PL	0/1:58,0,54
+chr22	46113690	.	G	C	42.0385	PASS	DP=11;VDB=8.49811e-07;SGB=-0.670168;RPBZ=-2.34521;MQBZ=0;BQBZ=0.820987;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=1,0,10,0;MQ=20	GT:PL	1/1:69,10,0
+chr22	46113714	.	C	T	75.2509	PASS	DP=631;VDB=0;SGB=-0.693147;RPBZ=0.545475;MQBZ=0;BQBZ=-6.14747;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=22,0,609,0;MQ=20	GT:PL	1/1:102,255,0
+chr3	35744548	.	C	A	26.055	PASS	DP=77;VDB=5.74532e-44;SGB=-0.693147;RPBZ=3.02204;MQBZ=0;BQBZ=-0.648716;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=6,0,71,0;MQ=20	GT:PL	1/1:53,98,0
+chr3	37969435	.	G	T	101.36	PASS	DP=7607;VDB=0;SGB=-0.693147;RPBZ=2.00012;MQBZ=0;BQBZ=1.23002;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=109,0,7498,0;MQ=20	GT:PL	1/1:128,255,0
+chr3	49020158	.	T	A	55.1839	PASS	DP=18;VDB=2.29362e-11;SGB=-0.690438;RPBZ=-2.25832;MQBZ=0;BQBZ=1.34727;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,1,0,17;MQ=20	GT:PL	1/1:82,34,0
+chr3	49020159	.	G	A	16.4757	PASS	DP=83;VDB=7.12062e-27;SGB=-0.693147;RPBZ=-5.69084;MQBZ=0;BQBZ=1.18334;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,34,0,49;MQ=20	GT:PL	0/1:49,0,45
+chr3	49020159	.	G	A	16.4757	PASS	DP=83;VDB=7.12062e-27;SGB=-0.693147;RPBZ=-5.69084;MQBZ=0;BQBZ=1.18334;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,34,0,49;MQ=20	GT:PL	0/1:49,0,45
+chr3	49020655	.	G	T	55.1698	PASS	DP=17;VDB=4.65469e-11;SGB=-0.689466;RPBZ=2.16025;MQBZ=0;MQSBZ=0;BQBZ=1.67888;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,1,16,0;MQ=20	GT:PL	1/1:82,31,0
+chr3	49020670	.	A	T	30.2088	PASS	DP=766;VDB=0;SGB=-0.693147;RPBZ=-5.24697;MQBZ=0;BQBZ=-6.91238;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,211,0,555;MQ=20	GT:PL	1/1:58,55,0
+chr3	52268334	.	C	T,A	36.3644	PASS	DP=24;VDB=1.30483e-15;SGB=-0.692352;RPBZ=0;MQBZ=0;BQBZ=3.82213;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=0,3,0,21;MQ=20	GT:PL	1/2:96,48,54,49,0,57
+chr3	188688816	.	T	A	74.9128	PASS	DP=229;VDB=0;SGB=-0.693147;RPBZ=2.60857;MQBZ=0;BQBZ=0.513118;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=27,0,202,0;MQ=20	GT:PL	1/1:102,255,0
+chr3	188688856	.	G	A	42.589	PASS	DP=5040;VDB=0;SGB=-0.693147;RPBZ=16.1644;MQBZ=0;MQSBZ=0;BQBZ=9.03259;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=788,1,4251,0;MQ=20	GT:PL	1/1:70,166,0
+chr3	188688857	.	G	T	70.3443	PASS	DP=290;VDB=0;SGB=-0.693147;RPBZ=-5.51666;MQBZ=0;BQBZ=-0.976424;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=4,0,286,0;MQ=20	GT:PL	1/1:97,255,0
+chr4	146408669	.	A	T	21.4025	PASS	DP=46;VDB=9.37531e-15;SGB=-0.692352;RPBZ=2.01882;MQBZ=0;BQBZ=1.70997;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=25,0,21,0;MQ=20	GT:PL	0/1:54,0,58
+chr5	149062373	.	C	A	52.6563	PASS	DP=1529;VDB=0;SGB=-0.693147;RPBZ=-8.88928;MQBZ=0;BQBZ=9.70416;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,211,0,1318;MQ=20	GT:PL	1/1:80,252,0
+chr5	149062373	.	C	A	38.6567	PASS	DP=1529;VDB=0;SGB=-0.693147;RPBZ=-8.88928;MQBZ=0;BQBZ=9.70416;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,211,0,1318;MQ=20	GT:PL	1/1:66,163,0
+chr5	149428999	.	A	T	24.1562	PASS	DP=454;VDB=0;SGB=-0.693147;RPBZ=2.62679;MQBZ=0;BQBZ=11.496;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=138,0,316,0;MQ=20	GT:PL	1/1:52,30,0
+chr5	149732889	.	C	T	66.3777	PASS	DP=573;VDB=0;SGB=-0.693147;RPBZ=0.50119;MQBZ=0;BQBZ=3.03206;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=5,0,568,0;MQ=20	GT:PL	1/1:93,255,0
+chr5	168560902	.	C	A	29.9257	PASS	DP=114;VDB=0;SGB=-0.693147;RPBZ=0.358766;MQBZ=0;BQBZ=-1.60695;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,13,0,101;MQ=20	GT:PL	1/1:57,137,0
+chr5	168560903	.	T	A	67.6579	PASS	DP=2098;VDB=0;SGB=-0.693147;RPBZ=-7.71529;MQBZ=0;BQBZ=3.36628;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,374,0,1724;MQ=20	GT:PL	1/1:95,221,0
+chr5	168560927	.	T	G	45.0344	PASS	DP=10;VDB=5.52906e-06;SGB=-0.662043;RPBZ=0;MQBZ=0;BQBZ=0.941554;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,1,0,9;MQ=20	GT:PL	1/1:72,10,0
+chr5	168560927	.	T	G	45.0344	PASS	DP=10;VDB=5.52906e-06;SGB=-0.662043;RPBZ=0;MQBZ=0;BQBZ=0.941554;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,1,0,9;MQ=20	GT:PL	1/1:72,10,0
+chr5	180015317	.	T	A	16.9857	PASS	DP=34;VDB=2.19352e-15;SGB=-0.693054;RPBZ=-0.404587;MQBZ=0;BQBZ=1.21117;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,6,0,28;MQ=20	GT:PL	1/1:44,5,0
+chr5	180015360	.	C	A,T	35.3529	PASS	DP=26;VDB=4.7194e-15;SGB=-0.692717;RPBZ=-2.56663;MQBZ=0;BQBZ=-1.28023;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=0,3,0,23;MQ=20	GT:PL	1/2:95,47,46,52,0,61
+chr6	71377001	.	C	A	101.117	PASS	DP=313;VDB=0;SGB=-0.693147;RPBZ=-12.9872;MQBZ=0;BQBZ=-1.57464;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,22,0,291;MQ=20	GT:PL	1/1:128,255,0
+chr7	1022989	.	A	T	28.2757	PASS	DP=36;VDB=1.30483e-15;SGB=-0.692352;RPBZ=-1.69706;MQBZ=0;BQBZ=-2.34255;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,15,0,21;MQ=20	GT:PL	0/1:61,0,52
+chr7	5495833	.	G	T	37.635	PASS	DP=15;VDB=3.1543e-08;SGB=-0.686358;RPBZ=0.392232;MQBZ=0;BQBZ=0.600481;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,1,0,14;MQ=20	GT:PL	1/1:89,39,25
+chr7	5495871	.	A	T	18.3223	PASS	DP=22;VDB=5.52906e-06;SGB=-0.662043;RPBZ=-0.83205;MQBZ=0;BQBZ=-1.3682;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,13,0,9;MQ=20	GT:PL	0/1:51,0,64
+chr7	25949919	.	G	A	29.9053	PASS	DP=33;VDB=1.17571e-13;SGB=-0.693079;RPBZ=0.242427;MQBZ=0;BQBZ=3.76658;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,4,0,29;MQ=20	GT:PL	1/1:57,26,0
+chr7	27169527	.	T	A	19.4521	PASS	DP=64;VDB=4.08523e-19;SGB=-0.69311;RPBZ=-2.34129;MQBZ=0;BQBZ=-1.9871;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,33,0,31;MQ=20	GT:PL	0/1:52,0,53
+chr7	100093570	.	G	T,A	45.5968	PASS	DP=498;VDB=0;SGB=-0.693147;RPBZ=-5.39995;MQBZ=0;BQBZ=4.72993;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=0,34,0,464;MQ=20	GT:PL	1/2:105,228,56,237,0,53
+chr7	100093813	.	C	A	69.3955	PASS	DP=121;VDB=0;SGB=-0.693147;RPBZ=0.376177;MQBZ=0;BQBZ=1.55274;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,1,0,120;MQ=20	GT:PL	1/1:96,255,0
+chr7	100094000	.	G	A	50.0725	PASS	DP=12;VDB=2.26006e-08;SGB=-0.676189;RPBZ=0;MQBZ=0;BQBZ=-0.814688;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,1,0,11;MQ=20	GT:PL	1/1:77,16,0
+chr7	129770445	.	C	A	25.4079	PASS	DP=459;VDB=0;SGB=-0.693147;RPBZ=-4.79089;MQBZ=0;BQBZ=-1.40693;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,233,0,226;MQ=20	GT:PL	0/1:58,0,56
+chr7	142474558	.	A	T	26.4108	PASS	DP=41;VDB=1.30483e-15;SGB=-0.692352;RPBZ=0;MQBZ=0;BQBZ=2.16889;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=20,0,21,0;MQ=20	GT:PL	0/1:59,0,58
+chr7	151238510	.	C	T	78.3185	PASS	DP=624;VDB=0;SGB=-0.693147;RPBZ=2.17461;MQBZ=0;BQBZ=2.60727;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=13,0,611,0;MQ=20	GT:PL	1/1:105,255,0
+chr8	22244972	.	T	A	61.7464	PASS	DP=222;VDB=0;SGB=-0.693147;RPBZ=0.516986;MQBZ=0;BQBZ=8.37538;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,35,0,187;MQ=20	GT:PL	1/1:89,222,0
+chr8	22244973	.	T	A	26.1936	PASS	DP=1775;VDB=0;SGB=-0.693147;RPBZ=-12.7947;MQBZ=0;BQBZ=4.48428;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,516,0,1259;MQ=20	GT:PL	1/1:54,38,0
+chr8	41660441	.	G	A	43.048	PASS	DP=13;VDB=2.26006e-08;SGB=-0.680642;RPBZ=0;MQBZ=0;BQBZ=1.42745;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,1,0,12;MQ=20	GT:PL	1/1:71,15,1
+chr8	41660466	.	C	T	71.3324	PASS	DP=41191;VDB=0;SGB=-0.693147;RPBZ=3.98958;MQBZ=0;BQBZ=30.6366;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=765,0,40426,0;MQ=20	GT:PL	1/1:98,255,0
+chr8	41660483	.	C	A	74.3725	PASS	DP=51378;VDB=0;SGB=-0.693147;RPBZ=-7.98486;MQBZ=0;BQBZ=2.40181;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,519,0,50859;MQ=20	GT:PL	1/1:101,255,0
+chr8	41660506	.	T	G	18.4646	PASS	DP=78;VDB=1.11793e-26;SGB=-0.693145;RPBZ=-1.92569;MQBZ=0;MQSBZ=0;BQBZ=0.0618544;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=4,33,0,41;MQ=20	GT:PL	0/1:51,0,104
+chr8	41660466	.	C	T	76.3324	PASS	DP=41191;VDB=0;SGB=-0.693147;RPBZ=3.98958;MQBZ=0;BQBZ=30.6366;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=765,0,40426,0;MQ=20	GT:PL	1/1:103,255,0
+chr8	41660483	.	C	A	76.3726	PASS	DP=51378;VDB=0;SGB=-0.693147;RPBZ=-7.98486;MQBZ=0;BQBZ=2.40181;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,519,0,50859;MQ=20	GT:PL	1/1:103,255,0
+chr8	41660506	.	T	G	18.4646	PASS	DP=78;VDB=1.11793e-26;SGB=-0.693145;RPBZ=-1.92569;MQBZ=0;MQSBZ=0;BQBZ=0.0618544;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=4,33,0,41;MQ=20	GT:PL	0/1:51,0,104
+chr8	41660506	.	T	G	18.4646	PASS	DP=78;VDB=1.11793e-26;SGB=-0.693145;RPBZ=-1.92569;MQBZ=0;MQSBZ=0;BQBZ=0.0618544;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=4,33,0,41;MQ=20	GT:PL	0/1:51,0,104
+chr8	134800569	.	C	A	27.121	PASS	DP=34;VDB=8.70437e-15;SGB=-0.692562;RPBZ=-3.56424;MQBZ=0;BQBZ=1.72499;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,12,0,22;MQ=20	GT:PL	0/1:60,0,45
+chr8	134804916	.	C	A	132.396	PASS	DP=2449;VDB=0;SGB=-0.693147;RPBZ=-5.26955;MQBZ=0;BQBZ=0.531272;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,22,0,2427;MQ=20	GT:PL	1/1:159,255,0
+chr8	140732585	.	G	A	59.1976	PASS	DP=2130;VDB=0;SGB=-0.693147;RPBZ=-6.41496;MQBZ=0;BQBZ=5.09462;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,80,0,2050;MQ=20	GT:PL	1/1:86,255,0
+chr9	83969771	.	T	A	16.4549	PASS	DP=13;VDB=1.33331e-05;SGB=-0.651104;RPBZ=-1.26491;MQBZ=0;BQBZ=1.17677;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,5,0,8;MQ=20	GT:PL	0/1:49,0,39
+chr9	83969771	.	T	A	16.4549	PASS	DP=13;VDB=1.33331e-05;SGB=-0.651104;RPBZ=-1.26491;MQBZ=0;BQBZ=1.17677;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,5,0,8;MQ=20	GT:PL	0/1:49,0,39
+chr9	94176034	.	C	T	25.3627	PASS	DP=45;VDB=1.30483e-15;SGB=-0.692914;RPBZ=5.50861;MQBZ=0;BQBZ=1.71719;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=20,0,25,0;MQ=20	GT:PL	0/1:58,0,54
+chr9	94176375	.	G	A	101.196	PASS	DP=2611;VDB=0;SGB=-0.693147;RPBZ=0.724079;MQBZ=0;BQBZ=-3.54713;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=135,0,2476,0;MQ=20	GT:PL	1/1:128,255,0
+chr9	95085288	.	G	T	136.427	PASS	DP=564;VDB=0;SGB=-0.693147;RPBZ=-0.215349;MQBZ=0;BQBZ=1.03497;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=1,0,563,0;MQ=20	GT:PL	1/1:163,255,0
+chr9	95085526	.	A	T	54.4689	PASS	DP=3787;VDB=0;SGB=-0.693147;RPBZ=9.78461;MQBZ=0;BQBZ=15.426;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=845,0,2942,0;MQ=20	GT:PL	1/1:82,142,0
+chr9	95085527	.	C	T	22.8452	PASS	DP=199;VDB=0;SGB=-0.693147;RPBZ=0.460633;MQBZ=0;BQBZ=2.49214;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=19,0,180,0;MQ=20	GT:PL	1/1:50,148,0
+chr9	95086086	.	G	T,A	45.3075	PASS	DP=117;VDB=0;SGB=-0.693147;RPBZ=-0.0540698;MQBZ=0;BQBZ=-1.16132;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=1,0,116,0;MQ=20	GT:PL	1/2:104,215,42,190,0,49
+chr9	95086086	.	G	T,A	45.3075	PASS	DP=117;VDB=0;SGB=-0.693147;RPBZ=-0.0540698;MQBZ=0;BQBZ=-1.16132;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=1,0,116,0;MQ=20	GT:PL	1/2:104,215,42,190,0,49
+chr9	124692505	.	G	T	48.1397	PASS	DP=123;VDB=0;SGB=-0.693147;RPBZ=10.2874;MQBZ=0;BQBZ=1.65762;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=8,0,115,0;MQ=20	GT:PL	1/1:75,220,0
+chr9	128244744	.	C	A,T	62.0902	PASS	DP=648;VDB=0;SGB=-0.693147;RPBZ=-0.579075;MQBZ=0;BQBZ=0.882288;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=0,4,0,644;MQ=20	GT:PL	1/2:120,255,37,255,0,59
+chr9	136670637	.	C	T	28.5394	PASS	DP=1203;VDB=0;SGB=-0.693147;RPBZ=23.0127;MQBZ=0;BQBZ=3.67828;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=189,0,1014,0;MQ=20	GT:PL	1/1:56,139,0
+chr9	136670675	.	C	T	106.377	PASS	DP=888;VDB=0;SGB=-0.693147;RPBZ=0.50043;MQBZ=0;BQBZ=0.00143851;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=10,0,878,0;MQ=20	GT:PL	1/1:133,255,0
+chrX	45746178	.	C	A	39.2558	PASS	DP=59;VDB=0;SGB=-0.693147;RPBZ=-5.33854;MQBZ=0;BQBZ=2.57005;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,2,0,57;MQ=20	GT:PL	1/1:66,99,0
+chrX	45746179	.	T	A	114.244	PASS	DP=3447;VDB=0;SGB=-0.693147;RPBZ=-7.98791;MQBZ=0;BQBZ=0.630017;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,151,0,3296;MQ=20	GT:PL	1/1:141,255,0
+chrX	45747031	.	C	A	62.3808	PASS	DP=530;VDB=0;SGB=-0.693147;RPBZ=-1.6641;MQBZ=0;BQBZ=-1.09096;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,4,0,526;MQ=20	GT:PL	1/1:89,255,0
+chrX	50008505	.	G	T	22.0251	PASS	DP=59;VDB=8.96831e-44;SGB=-0.693147;RPBZ=2.01632;MQBZ=0;BQBZ=0.543201;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=5,0,54,0;MQ=20	GT:PL	1/1:54,59,5
+chrX	53556298	.	C	A	40.5602	PASS	DP=178;VDB=0;SGB=-0.693147;RPBZ=0.15162;MQBZ=0;BQBZ=0.186996;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,4,0,174;MQ=20	GT:PL	1/1:96,255,31
+chrX	53557196	.	G	A	55.2513	PASS	DP=25;VDB=1.30483e-15;SGB=-0.692831;RPBZ=0;MQBZ=0;BQBZ=2.60623;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,1,0,24;MQ=20	GT:PL	1/1:82,55,0
+chrX	53557268	.	T	G	16.4001	PASS	DP=143;VDB=0;SGB=-0.693147;RPBZ=-2.83198;MQBZ=0;BQBZ=2.33901;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=0,60,0,83;MQ=20	GT:PL	0/1:49,0,35
+chrX	53557196	.	G	A	55.2513	PASS	DP=25;VDB=1.30483e-15;SGB=-0.692831;RPBZ=0;MQBZ=0;BQBZ=2.60623;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,1,0,24;MQ=20	GT:PL	1/1:82,55,0
+chrX	66018961	.	T	A	20.3871	PASS	DP=20;VDB=5.52906e-06;SGB=-0.662043;RPBZ=0;MQBZ=0;BQBZ=-1.1149;SCBZ=0;MQ0F=0;AC=1;AN=2;DP4=11,0,9,0;MQ=20	GT:PL	0/1:53,0,62
+chrX	110055410	.	C	T	15.3513	PASS	DP=383;VDB=0;SGB=-0.693147;RPBZ=2.46103;MQBZ=0;BQBZ=4.0926;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=90,0,293,0;MQ=20	GT:PL	1/1:43,36,0
+chrX	119646762	.	G	A,T	50.7882	PASS	DP=27;VDB=4.12497e-15;SGB=-0.692976;RPBZ=0.282843;MQBZ=0;BQBZ=-1.31368;SCBZ=0;MQ0F=0;AC=1,1;AN=2;DP4=0,1,0,26;MQ=20	GT:PL	1/2:110,75,42,76,0,62
+chrX	134169543	.	C	T	131.344	PASS	DP=16690;VDB=0;SGB=-0.693147;RPBZ=-15.9444;MQBZ=0;BQBZ=2.94472;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=0,327,0,16363;MQ=20	GT:PL	1/1:158,255,0
