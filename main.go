@@ -102,7 +102,7 @@ func parseArgs() error {
 	vcfSortedFilteredResultFile = filepath.Join(accessionResultsFolder, "result.sorted.filtered.vcf")
 	tsvSortedFilteredResultFile = filepath.Join(accessionResultsFolder, "result.sorted.filtered.annotated.tsv")
 	resultTable = filepath.Join(resultsFolder, "result-"+Accession+".tsv")
-	resultHeatmapImage = filepath.Join(resultsFolder, "result-"+Accession+".png")
+	resultHeatmapImage = filepath.Join(resultsFolder, "result-heatmap-"+Accession+".png")
 
 	reheaderedGenomeFile = removeExtFromFile(GenomeFile) + ".reheadered" + filepath.Ext(GenomeFile)
 
@@ -641,7 +641,7 @@ func generateResultImages(table, resultHeatMapImage string) func() error {
 			return err
 		}
 		sr := shell.NewShellRunner(nil, nil, nil)
-		return sr.RunShell("python3", "scripts/plot.py", table, resultHeatMapImage)
+		return sr.RunShell("python3", "scripts/heatmap.py", table, resultHeatMapImage)
 	}
 }
 
