@@ -41,6 +41,7 @@ var (
 	tsvSortedFilteredResultFile string
 	resultTable                 string
 	resultHeatmapImage          string
+	resultBarplotImage          string
 
 	reheaderedGenomeFile    string
 	genomeAnnotationBedFile string
@@ -94,15 +95,16 @@ func parseArgs() error {
 
 	BowtieIndexPrefix = filepath.Join(bowtieIndexFolder, BowtieIndexPrefix)
 	fastqFile = filepath.Join("input", Accession+".fastq.gz")
-	accessionResultsFolder = filepath.Join(resultsFolder, Accession)
+	accessionResultsFolder = filepath.Join(resultsFolder, "samples_data", Accession)
 
 	bowtieResultFile = filepath.Join(accessionResultsFolder, "result.sam")
 	bamResultFile = filepath.Join(accessionResultsFolder, "result.bam")
 	bamSortedResultFile = filepath.Join(accessionResultsFolder, "result.sorted.bam")
 	vcfSortedFilteredResultFile = filepath.Join(accessionResultsFolder, "result.sorted.filtered.vcf")
 	tsvSortedFilteredResultFile = filepath.Join(accessionResultsFolder, "result.sorted.filtered.annotated.tsv")
-	resultTable = filepath.Join(resultsFolder, "result-"+Accession+".tsv")
-	resultHeatmapImage = filepath.Join(resultsFolder, "result-heatmap-"+Accession+".png")
+	resultTable = filepath.Join(resultsFolder, "tables/result-"+Accession+".tsv")
+	resultHeatmapImage = filepath.Join(resultsFolder, "heatmaps/result-heatmap-"+Accession+".png")
+	resultBarplotImage = filepath.Join(resultsFolder, "barplots/result-barplot-"+Accession+".png")
 
 	reheaderedGenomeFile = removeExtFromFile(GenomeFile) + ".reheadered" + filepath.Ext(GenomeFile)
 
@@ -226,8 +228,13 @@ func main() {
 		},
 		{
 			resultFile: resultHeatmapImage,
-			f:          generateResultImages(resultTable, resultHeatmapImage),
-			logMessage: "Generating result images",
+			f:          generateHeatmap(resultTable, resultHeatmapImage),
+			logMessage: "Generating Heatmap image",
+		},
+		{
+			resultFile: resultBarplotImage,
+			f:          generateBarplot(resultTable, resultBarplotImage),
+			logMessage: "Generating Barplot image",
 		},
 	}
 
@@ -648,13 +655,23 @@ func generateResultTable(matureMirnaSeqs, hairpinMirnaSeqs, genomeFile, intersec
 	}
 }
 
-func generateResultImages(table, resultHeatMapImage string) func() error {
+func generateHeatmap(table, resultHeatMapImage string) func() error {
 	return func() error {
 		if err := pathForFile(resultHeatMapImage); err != nil {
 			return err
 		}
 		sr := shell.NewShellRunner(nil, nil, nil)
 		return sr.RunShell("python3", "scripts/heatmap.py", table, resultHeatMapImage)
+	}
+}
+
+func generateBarplot(table, resultBarplotImage string) func() error {
+	return func() error {
+		if err := pathForFile(resultBarplotImage); err != nil {
+			return err
+		}
+		sr := shell.NewShellRunner(nil, nil, nil)
+		return sr.RunShell("python3", "scripts/barplot.py", table, resultBarplotImage)
 	}
 }
 
