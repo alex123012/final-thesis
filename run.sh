@@ -23,5 +23,6 @@ while IFS= read -r accession_line; do
         echo "empty accession line: ${accession_line}"
         continue
     fi
+    echo "running: ${accession}"
     "$runner" --accession "$accession" --adapter-seq "$adapter_seq"
 done < "$accessions_list_file"

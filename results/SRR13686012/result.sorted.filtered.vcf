@@ -728,11 +728,11 @@
 ##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
 ##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
 ##bcftools_callVersion=1.17+htslib-1.17
-##bcftools_callCommand=call -Ou -mv; Date=Tue May 16 23:02:50 2023
+##bcftools_callCommand=call -Ou -mv; Date=Wed May 17 11:54:05 2023
 ##FILTER=<ID=SnpGap,Description="SNP within 3 bp of indel">
 ##FILTER=<ID=IndelGap,Description="Indel within 10 bp of an indel">
 ##bcftools_filterVersion=1.17+htslib-1.17
-##bcftools_filterCommand=filter -g3 -G10 -e 'QUAL<15 || (DP4[0]+DP4[1] == 0) || DP < 10'; Date=Tue May 16 23:02:59 2023
+##bcftools_filterCommand=filter -g3 -G10 -e 'QUAL<15 || (DP4[0]+DP4[1] == 0) || DP < 10'; Date=Wed May 17 11:54:13 2023
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	results/SRR13686012/result.sorted.bam
 chr1	40757313	.	C	G	37.8982	PASS	DP=16;VDB=2.26006e-08;SGB=-0.686358;RPBZ=3.87298;MQBZ=0;BQBZ=-1.10657;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=2,0,14,0;MQ=20	GT:PL	1/1:65,10,0
 chr1	40757313	.	C	G	37.8982	PASS	DP=16;VDB=2.26006e-08;SGB=-0.686358;RPBZ=3.87298;MQBZ=0;BQBZ=-1.10657;SCBZ=0;MQ0F=0;AC=2;AN=2;DP4=2,0,14,0;MQ=20	GT:PL	1/1:65,10,0

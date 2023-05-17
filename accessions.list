@@ -1,4 +1,10 @@
 # PRJNA820035:
+SRR18488106 # miRNAseq of platelets isolated from VO patient
+SRR18488107 # miRNAseq of platelets isolated from VO patient
+SRR18488108 # miRNAseq of platelets isolated from VO patient
+SRR18488109 # miRNAseq of platelets isolated from VO patient
+SRR18488110 # miRNAseq of platelets isolated from VO patient
+
 SRR18488115 # miRNAseq of platelets isolated from healthy subject
 SRR18488114 # miRNAseq of platelets isolated from healthy subject
 SRR18488113 # miRNAseq of platelets isolated from healthy subject
@@ -6,10 +12,26 @@ SRR18488112 # miRNAseq of platelets isolated from healthy subject
 SRR18488111 # miRNAseq of platelets isolated from healthy subject
 
 # PRJNA666072:
+SRR13686012 # Caco-2_Control_miRNA_rep1
+SRR13686013 # Caco-2_Control_miRNA_rep2
+SRR13686014 # Caco-2_Control_miRNA_rep3
+
+SRR13686015 # Caco-2_CoCl2_miRNA_rep1
+SRR13686016 # Caco-2_CoCl2_miRNA_rep2
+SRR13686017 # Caco-2_CoCl2_miRNA_rep3
+
+SRR13686018 # Caco-2_Oxy_miRNA_rep1
+SRR13686019 # Caco-2_Oxy_miRNA_rep2
+SRR13686020 # Caco-2_Oxy_miRNA_rep3
+
 SRR13686030 # HT-29_Control_miRNA_rep1
 SRR13686031 # HT-29_Control_miRNA_rep2
 SRR13686032 # HT-29_Control_miRNA_rep3
 
-SRR13686012 # Caco-2_Control_miRNA_rep1
-SRR13686013 # Caco-2_Control_miRNA_rep2
-SRR13686014 # Caco-2_Control_miRNA_rep3
+SRR13686033 # HT-29_CoCl2_miRNA_rep1
+SRR13686034 # HT-29_CoCl2_miRNA_rep2
+SRR13686035 # HT-29_CoCl2_miRNA_rep3
+
+SRR13686036 # HT-29_Oxy_miRNA_rep1
+SRR13686037 # HT-29_Oxy_miRNA_rep2
+SRR13686038 # HT-29_Oxy_miRNA_rep3

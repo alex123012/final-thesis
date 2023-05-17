@@ -30,7 +30,7 @@ func NewShellRunner(stdin io.Reader, stdout, sterr io.Writer, dontWait ...bool) 
 }
 
 func (r *ShellRunner) RunShell(app string, args ...string) error {
-	log.Printf("executing command '%s %s'\n", app, strings.Join(args, " "))
+	log.Printf("executing command `%s '%s'`\n", app, strings.Join(args, "' '"))
 	r.cmd = exec.Command(app, args...)
 	if r.stdin != nil {
 		r.cmd.Stdin = r.stdin
