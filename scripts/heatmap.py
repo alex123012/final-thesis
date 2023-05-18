@@ -17,7 +17,7 @@ def plot_ref_alt_heatmap(df: pd.DataFrame, name: str, result_heatmap: str):
 
     fig, ax = plt.subplots()
     fig.suptitle(f"Editing events count in {name}")
-    sns.heatmap(data=data, cmap="Blues", ax=ax, annot=True, fmt='g')
+    sns.heatmap(data=data, cmap="Blues", ax=ax, annot=True, fmt="g")
     fig.savefig(result_heatmap)
 
 

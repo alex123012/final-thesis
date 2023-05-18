@@ -8,6 +8,8 @@ mirna
 *.bai
 *.gz
 *.fastq
+results/isomiRMap/result/**/*.html
+results/isomiRMap/result/**/*.gff3
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
