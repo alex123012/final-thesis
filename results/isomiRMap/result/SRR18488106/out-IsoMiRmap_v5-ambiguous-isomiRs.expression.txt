@@ -1,0 +1,8 @@
+## Table of ambiguous-isomiRs.
+## miRBase_v22 (BundleRev_001): miR-space: miRBase v22, assembly: GRCh38
+## IsoMiRmap_v5	5/18/2023	--m	miRBase	--p	out	SRR18488106.fastq.gz
+## RPM* - Using [1] as denominator - total number of reads in this output file.
+## RPM** - Using [6749409] as denominator - total number of reads in FASTQ file.
+## RPM*** - Using [na] as denominator - custom denominator passed in with -d parameter.
+License Plate	IsomiR sequence	Type	Unnormalized read counts	RPM*	RPM**	RPM***	Hairpin locations (comma delimited)	Mature meta-data (bracket delimited per hairpin)	RepeatMaskerClassIsland where fragment is fully contained (comma delimited)
+iso-51-ZZZZZZZZZZZZZZZZZZZZE	TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT	wildtype+U(s)	1	1000000.0	0.15	na	MI0019147|hsa-mir-5588&WithFlank&3|-|185253204|185253278@24.42.19(+32U)	[MIMAT0022295&hsa-miR-5588-5p&offsets|+17|+15(+32U), m-1254&3|-|185253252|185253272&offsets|+17|+15(+32U)]	Retroposon,Satellite,DNA,Simple_repeat,LTR,LINE,SINE

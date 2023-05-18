@@ -1,0 +1,3 @@
+## IsoMiRmap_v5	5/19/2023	--e	c	--m	miRBase	--p	out_edit	SRR18488113.fastq.gz
+Total reads in -f input file	Total unnormalized reads in exclusive-isomiRs	Percent
+6408722	0	0.0%

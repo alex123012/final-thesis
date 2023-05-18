@@ -6,4 +6,4 @@ cd final-thesis/results/isoMiRmap
 ```
 
 # Time comparasion
-Vanilla isoMiRmap runs <!-- placeholder -->`1.6686375028159093`<!-- end placeholder --> times faster then with new editing flag with canonical editing events.
+Vanilla isoMiRmap runs <!-- placeholder -->`1.6324875562723509`<!-- end placeholder --> times faster then with new editing flag with canonical editing events.
