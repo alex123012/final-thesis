@@ -9,6 +9,7 @@ from utils import retrieve_name_from_filename, read_csv
 from heatmap import plot_ref_alt_heatmap
 from barplot import plot_ref_alt_barplot, HUE_COL, df_for_barplot
 from histogram import plot_vaf_histogram
+from seed_editing import plot_seed_editing_events_count, count_seed_editing_events
 
 import pandas as pd
 
@@ -32,7 +33,8 @@ def main():
     result_barplot = sys.argv[2]
     result_heatmap = sys.argv[3]
     result_hist = sys.argv[4]
-    table_files = sys.argv[5:]
+    result_seed_editing = sys.argv[5]
+    table_files = sys.argv[6:]
 
     sup_title = f"all samples{additional_figname}"
 
@@ -43,6 +45,15 @@ def main():
 
     data_histplot = concat_df_dict(df_dict=df_dict)
     plot_vaf_histogram(df=data_histplot, name=sup_title, result_hist=result_hist)
+
+    data_seed_editing_events = concat_df_dict(
+        df_dict=df_dict, func=count_seed_editing_events
+    )
+    plot_seed_editing_events_count(
+        df=data_seed_editing_events,
+        name=sup_title,
+        result_image=result_seed_editing,
+    )
 
     data_barplot = concat_df_dict(df_dict=df_dict, func=df_for_barplot)
     plot_ref_alt_barplot(
