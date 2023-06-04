@@ -667,6 +667,10 @@ func generateHeatmap(table, resultHeatMapImage string) func() error {
 		if err := pathForFile(resultHeatMapImage); err != nil {
 			return err
 		}
+		if err := create(resultHeatMapImage); err != nil {
+			return err
+		}
+
 		sr := shell.NewShellRunner(nil, nil, nil)
 		return sr.RunShell("python3", "scripts/heatmap.py", table, resultHeatMapImage)
 	}
@@ -677,6 +681,11 @@ func generateBarplot(table, resultBarplotImage string) func() error {
 		if err := pathForFile(resultBarplotImage); err != nil {
 			return err
 		}
+
+		if err := create(resultBarplotImage); err != nil {
+			return err
+		}
+
 		sr := shell.NewShellRunner(nil, nil, nil)
 		return sr.RunShell("python3", "scripts/barplot.py", table, resultBarplotImage)
 	}
@@ -687,6 +696,10 @@ func generateHistplot(table, resultHistImage string) func() error {
 		if err := pathForFile(resultHistImage); err != nil {
 			return err
 		}
+		if err := create(resultHistImage); err != nil {
+			return err
+		}
+
 		sr := shell.NewShellRunner(nil, nil, nil)
 		return sr.RunShell("python3", "scripts/histogram.py", table, resultHistImage)
 	}

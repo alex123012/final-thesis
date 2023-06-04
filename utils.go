@@ -243,3 +243,10 @@ func gzipFile(fileName string) func() error {
 		return sr.RunShell("gzip", fileName)
 	}
 }
+func create(filename string) error {
+	f, err := os.Create(resultBarplotImage)
+	if err != nil {
+		return err
+	}
+	return f.Close()
+}

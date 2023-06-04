@@ -60,11 +60,18 @@ def plot_seed_editing_events_count(df: pd.DataFrame, name: str, result_image: st
     fig, ax = plt.subplots(figsize=(20, 14))
     fig.suptitle(f"Editing events in seed regions and outside seed regions in\n{name}")
 
+    palette = dict(
+        zip(
+            ["seed region", "outside seed region"],
+            sns.color_palette(n_colors=2),
+        )
+    )
     sns.barplot(
         data=data.sort_values(Y_COL),
         x=X_COL,
         y=Y_COL,
         hue=EDITED_IN_COL,
         ax=ax,
+        palette=palette,
     )
     fig.savefig(result_image)
