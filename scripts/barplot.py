@@ -67,6 +67,7 @@ def plot_ref_alt_barplot(
             )
         )
     )
+    ax.legend(loc="upper left")
     fig.savefig(result_barplot)
 
 

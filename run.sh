@@ -32,8 +32,8 @@ while IFS= read -r project; do
     files=$(ls results/tables/*.tsv | grep -E "$project_samples")
 
     echo "running: for project ${project}"
-    python3 scripts/full_plots.py "results/result-barplot-${project}.png" "results/result-heatmap-${project}.png" $files
+    python3 scripts/full_plots.py " of the $project project" "results/result-barplot-${project}.png" "results/result-heatmap-${project}.png" "results/result-histogram-${project}.png" $files
 done < <(awk '{print $3}' accessions.list | awk NF | sort -u)
 
 echo "running for all samples"
-python3 scripts/full_plots.py results/result-barplot-full.png results/result-heatmap-full.png results/tables/*.tsv
+python3 scripts/full_plots.py "" results/result-barplot-full.png results/result-heatmap-full.png results/result-histogram-full.png results/tables/*.tsv

@@ -42,6 +42,7 @@ var (
 	resultTable                 string
 	resultHeatmapImage          string
 	resultBarplotImage          string
+	resultHistImage             string
 
 	reheaderedGenomeFile    string
 	genomeAnnotationBedFile string
@@ -105,6 +106,7 @@ func parseArgs() error {
 	resultTable = filepath.Join(resultsFolder, "tables/result-"+Accession+".tsv")
 	resultHeatmapImage = filepath.Join(resultsFolder, "heatmaps/result-heatmap-"+Accession+".png")
 	resultBarplotImage = filepath.Join(resultsFolder, "barplots/result-barplot-"+Accession+".png")
+	resultHistImage = filepath.Join(resultsFolder, "histograms/result-hist-"+Accession+".png")
 
 	reheaderedGenomeFile = removeExtFromFile(GenomeFile) + ".reheadered" + filepath.Ext(GenomeFile)
 
@@ -235,6 +237,11 @@ func main() {
 			resultFile: resultBarplotImage,
 			f:          generateBarplot(resultTable, resultBarplotImage),
 			logMessage: "Generating Barplot image",
+		},
+		{
+			resultFile: resultHistImage,
+			f:          generateHistplot(resultTable, resultHistImage),
+			logMessage: "Generating Histogram image",
 		},
 	}
 
@@ -672,6 +679,16 @@ func generateBarplot(table, resultBarplotImage string) func() error {
 		}
 		sr := shell.NewShellRunner(nil, nil, nil)
 		return sr.RunShell("python3", "scripts/barplot.py", table, resultBarplotImage)
+	}
+}
+
+func generateHistplot(table, resultHistImage string) func() error {
+	return func() error {
+		if err := pathForFile(resultHistImage); err != nil {
+			return err
+		}
+		sr := shell.NewShellRunner(nil, nil, nil)
+		return sr.RunShell("python3", "scripts/histogram.py", table, resultHistImage)
 	}
 }
 
