@@ -27,13 +27,12 @@ def count_seed_editing_events(df: pd.DataFrame) -> pd.DataFrame:
         prim_strand_seed_pos = mirline.STRAND == "+" and edit_pos > 1 and edit_pos < 8
 
         if pass_strand_seed_pos or prim_strand_seed_pos:
-            seed_edit.add(f"{mirline.ANNOT}:{mirline.POS}")
+            seed_edit.add(mirline.POS)
 
     df[EDITED_IN_COL] = "outside seed region"
     for mir_pos in seed_edit:
-        pos = int(mir_pos.split(":")[1])
         df[EDITED_IN_COL] = df.apply(
-            in_seed_region(pos),
+            in_seed_region(mir_pos),
             axis=1,
         )
 
