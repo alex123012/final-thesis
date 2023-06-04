@@ -244,7 +244,7 @@ func gzipFile(fileName string) func() error {
 	}
 }
 func create(filename string) error {
-	f, err := os.Create(resultBarplotImage)
+	f, err := os.Create(filename)
 	if err != nil {
 		return err
 	}
